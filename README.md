@@ -1,4 +1,4 @@
-# michaelbel.github.io
+## michaelbel.org
 
 Personal website and blog
 
