@@ -1,49 +1,161 @@
+#colorBackgroundD,
+#colorBackgroundM {
+    background-image: url("/images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#bioColumn {
+    height: 100vh;
+    top: 0;
+}
+
+#profileImageD {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: calc(10%);
+    margin-left: calc(50% - 150px);
+    margin-bottom: 40px;
+}
+
+#profileImageM {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: calc(30%);
+    margin-bottom: calc(10%);
+    margin-left: calc(50% - 100px);
+}
+
+.modal.bottom-sheet {
+    max-height: 90% !important;
+}
+
+.download:hover {
+    background-color: lightgray;
+}
+
 body {
-	line-height: 1;
+    animation-name: alphaIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
-ol, ul {
-	list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif, color: #FFF;
-}
-
-p {
-	font-family: 'Roboto', sans-serif;
-	color: #FFF;
+@keyframes alphaIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
+/* Bio */
 
-
-
-.form .hero-content h1 {
-	font-size: 32px;
-	font-weight: 900;
-	color: #FFF;
-	line-height: 1.0;
-	letter-spacing: -1px;
-	margin: 0 0 20px 0;
+.bioContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
 }
 
-.form .hero-content p {
-	font-family: 'Roboto', sans-serif;
-	font-size: 17px;
-	color: #FFF;
-	font-weight: 400;
-	line-height: 1.3;
-	margin: 0 0 25px 0;
+.bioCard {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-@media only screen and (min-width: 767px) {
-	.form .hero-content {
-		padding: 200px 0 200px 0;
-		overflow: hidden;
-	}
+.bioCard>img {
+    height: 120px;
+    width: auto;
+}
 
-	.form .hero-content h1 {
-		font-size: 52px;
-	}
+.mdc-dialog__body {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+@media only screen and (max-height: 475px) {
+    #colorBackgroundD, #colorBackgroundM {
+        padding-top: 300px !important;
+    }
+}
+
+.thin {
+    font-weight: 300 !important;
+}
+
+.mdc-dialog__footer__button {
+    color: #00C853 !important;
+}
+
+#contact_card {
+  margin: 0 auto;
+  position: relative;
+  padding: 15px 30px 15px 30px;
+  margin-top: 22px;
+  margin-bottom: 40px;
+}
+
+#contact_card>.tab {
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+
+#contact_card>.tab>.title {
+  font-size: 16px;
+  color: #2196F3;
+  /*Change title and title icon color (Contact Card)*/
+}
+
+#contact_card>.tab>.content {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#contact_card>.tab>.content>.contacts {
+  margin: 0 20px 0 20px;
+  display: inline-block;
+  font-size: 14px;
+  color: #212121;
+}
+
+#contact_card a {
+  color: #616161;
+  text-decoration: none;
+  /*Change link color (ONLY Contact Card)*/
+}
+
+#contact_card a:hover {
+  color: #9E9E9E;
+  /*Change link color (on mouse over, ONLY Contact Card) */
+}
+
+.contact_icon {
+  font-size: 20px;
+}
+
+#linkSection {
+    margin-top: 3px;
+    margin-bottom: 8px;
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#linkContent {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#contacts {
+    margin: 0 20px 0 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #212121;
 }
