@@ -1,3 +1,94 @@
+/*---Bio---*/
+h1.bioName {
+    font-size: 36px;
+    color: #212121;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: 'RobotoMedium';
+    line-height: 1.0;
+}
+
+p.bioDescription {
+    font-size: 18px;
+    color: #757575;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 50%;
+}
+
+/*---Mobile version---*/
+@media only screen and (max-height: 475px) {
+    h1.bioName {
+        font-size: 36px;
+        font-family: 'RobotoMedium';
+        color: #212121;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        line-height: 1.0;
+    }
+
+    p.bioDescription {
+        font-size: 18px;
+        color: #757575;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+}
+
+/*---Fonts---*/
+@font-face {
+    font-family: "RobotoBold";  
+    src: url("../fonts/roboto/Roboto-Bold.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoLight";  
+    src: url("../fonts/roboto/Roboto-Light.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoMedium";  
+    src: url("../fonts/roboto/Roboto-Medium.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoRegular";  
+    src: url("../fonts/roboto/Roboto-Regular.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoThin";  
+    src: url("../fonts/roboto/Roboto-Thin.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #colorBackgroundD,
 #colorBackgroundM {
     background-image: url("/images/banner.png");
@@ -158,74 +249,4 @@ body {
     display: inline-block;
     font-size: 14px;
     color: #212121;
-}
-
-/*---Bio---*/
-
-h1.bioName {
-    font-size: 36px;
-    color: #212121;
-    text-decoration: none;
-    margin-left: 40px;
-    font-family: 'RobotoMedium';
-    line-height: 1.0;
-}
-
-p.bioDescription {
-    font-size: 18px;
-    color: #757575;
-    text-decoration: none;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 50%;
-}
-
-/*---Mobile version---*/
-
-@media only screen and (max-height: 475px) {
-    p.bioDescription {
-        font-size: 18px;
-        color: #757575;
-        text-decoration: none;
-        margin-left: 40px;
-        margin-right: 40px;
-        width: 100%;
-    }
-}
-
-/*---Fonts---*/
-
-@font-face {
-    font-family: "RobotoBold";  
-    src: url("../fonts/roboto/Roboto-Bold.woff") format("woff"); 
-    font-style: normal; 
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "RobotoLight";  
-    src: url("../fonts/roboto/Roboto-Light.woff") format("woff"); 
-    font-style: normal; 
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "RobotoMedium";  
-    src: url("../fonts/roboto/Roboto-Medium.woff") format("woff"); 
-    font-style: normal; 
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "RobotoRegular";  
-    src: url("../fonts/roboto/Roboto-Regular.woff") format("woff"); 
-    font-style: normal; 
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "RobotoThin";  
-    src: url("../fonts/roboto/Roboto-Thin.woff") format("woff"); 
-    font-style: normal; 
-    font-weight: normal;
 }
