@@ -50,21 +50,23 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <div class="row">
-        <!---Desktop Version-->
+
         <div id="colorBackgroundD" class="col s12 hide-on-small-only" 
         	 style="min-height: 100vh; 
         	        padding-top: 50vh; 
         	        background: url('images/banner.png') 100% 100% no-repeat; 
         	        background-size: cover;">
+        	<!-- <a class="blog-logo" href="http://michaelbel.org"><img src="images/me.png" alt="Michael Bely"/></a> -->
+
             <h2 class="white-text center-align">Michael Bely</h2>
             <h4 class="white-text center-align thin">No clever tagline needed</h4>
         </div>
 
         <!---Mobile Version-->
-        <!-- <div id="colorBackgroundM" class="col s12 hide-on-med-and-up" style="min-height: 100vh; padding-bottom: 40px; padding-top: 55vh;>
-            <h2 class="white-text center-align">Michael Bely personal website</h2>
+        <div id="colorBackgroundM" class="col s12 hide-on-med-and-up" style="min-height: 100vh; padding-bottom: 40px; padding-top: 55vh;">
+            <h2 class="white-text center-align">Michael Bely</h2>
             <h4 class="white-text center-align thin">No clever tagline needed</h4>
-        </div> -->
+        </div>
     </div>
 
     <!-- <div> -->
@@ -491,7 +493,7 @@
     <footer class="page-footer white">
         <div class="footer-copyright" style="background-color: #00C853">
             <div class="container">
-                Created by <a class="white-text" href="http://michaelbel.org/bio"><b>Michael Bely</b></a> — Hosted by <a class="white-text" href="https://pages.github.com/"><b>GitHub Pages</b><br>© 2018, Moscow</a>
+                Created by <a class="white-text" href="http://michaelbel.org/bio"><b>Michael Bely</b></a> — Hosted by <a class="white-text" href="https://pages.github.com/"><b>GitHub Pages</a></b><br>© 2018, Moscow
             </div>
         </div>
     </footer>
@@ -500,122 +502,6 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <!-- <script>
-        window.mdc.autoInit();
-
-    </script> -->
-    <!-- <script>
-        $(document).ready(function() {
-            $('.modal').modal();
-        });
-
-        const MDCDialog = mdc.dialog.MDCDialog;
-        const MDCDialogFoundation = mdc.dialog.MDCDialogFoundation;
-        const util = mdc.dialog.util;
-
-        // Till Modal
-        var dialogTill = new mdc.dialog.MDCDialog(document.querySelector('#dialog-till'));
-
-        dialogTill.listen('MDCDialog:accept', function() {
-            dialogTill.close();
-            console.log('accepted');
-        })
-
-        dialogTill.listen('MDCDialog:cancel', function() {
-            console.log('canceled');
-        })
-
-        document.querySelector('#tillModal').addEventListener('click', function(evt) {
-            dialogTill.lastFocusedTarget = evt.target;
-            dialogTill.show();
-        })
-
-        // paphonb modal
-        var dialogPap = new mdc.dialog.MDCDialog(document.querySelector('#dialog-pap'));
-
-        dialogPap.listen('MDCDialog:accept', function() {
-            dialogTill.close();
-            console.log('accepted');
-        })
-
-        dialogPap.listen('MDCDialog:cancel', function() {
-            console.log('canceled');
-        })
-
-        document.querySelector('#papModal').addEventListener('click', function(evt) {
-            dialogPap.lastFocusedTarget = evt.target;
-            dialogPap.show();
-        })
-
-        // Jozsef modal
-        var dialogJoz = new mdc.dialog.MDCDialog(document.querySelector('#dialog-jozsef'));
-
-        dialogJoz.listen('MDCDialog:accept', function() {
-            dialogJoz.close();
-            console.log('accepted');
-        })
-
-        dialogJoz.listen('MDCDialog:cancel', function() {
-            console.log('canceled');
-        })
-
-        document.querySelector('#jozsefModal').addEventListener('click', function(evt) {
-            dialogJoz.lastFocusedTarget = evt.target;
-            dialogJoz.show();
-        })
-
-        // David modal
-        var dialogDavid = new mdc.dialog.MDCDialog(document.querySelector('#dialog-david'));
-
-        dialogDavid.listen('MDCDialog:accept', function() {
-            dialogDavid.close();
-            console.log('accepted');
-        })
-
-        dialogDavid.listen('MDCDialog:cancel', function() {
-            console.log('canceled');
-        })
-
-        document.querySelector('#davidModal').addEventListener('click', function(evt) {
-            dialogDavid.lastFocusedTarget = evt.target;
-            dialogDavid.show();
-        })
-
-        // Joshua modal
-        var dialogJoshua = new mdc.dialog.MDCDialog(document.querySelector('#dialog-joshua'));
-
-        dialogJoshua.listen('MDCDialog:accept', function() {
-            dialogJoshua.close();
-            console.log('accepted');
-        })
-
-        dialogJoshua.listen('MDCDialog:cancel', function() {
-            console.log('canceled');
-        })
-
-        document.querySelector('#joshuaModal').addEventListener('click', function(evt) {
-            dialogJoshua.lastFocusedTarget = evt.target;
-            dialogJoshua.show();
-        })
-
-        // Chris modal
-        var dialogChris = new mdc.dialog.MDCDialog(document.querySelector('#dialog-chris'));
-
-        dialogChris.listen('MDCDialog:accept', function() {
-            dialogChris.close();
-            console.log('accepted');
-        })
-
-        dialogChris.listen('MDCDialog:cancel', function() {
-            console.log('canceled');
-        })
-
-        document.querySelector('#chrisModal').addEventListener('click', function(evt) {
-            dialogChris.lastFocusedTarget = evt.target;
-            dialogChris.show();
-        })
-
-    </script> -->
 </body>
 
 </html>
