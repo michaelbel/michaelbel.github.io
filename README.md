@@ -1,6 +1,6 @@
 ## michaelbel.org
 
-Personal website
+Personal website and blog
 
     Copyright 2018 Michael Bel
 
