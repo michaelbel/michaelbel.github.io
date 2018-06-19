@@ -5,82 +5,55 @@
 -->
 <head>
     <!--Кодировка-->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <!--Название страницы-->
     <title>Michael Bely</title>
     <!--Оптимизировать для мобильных устройств-->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Ключевые слова-->
-    <meta name="keywords" content="personal blog, website, site, page, portfolio"/>
+    <meta name="keywords" content="personal blog, website, site, page, portfolio">
     <!--Описание-->
-    <meta name="description" content="Michael Bely - personal website and blog"/>
+    <meta name="description" content="Personal website and blog">
     <!--Документ кэшируется-->
-    <meta http-equiv="Cache-Control" content="public"/>
+    <meta http-equiv="Cache-Control" content="public">
     <!--Автор-->
-    <meta name="author" content="Michael Bely"/>
+    <meta name="author" content="Michael Bely">
     <!--Авторские права-->
-    <meta name="copyright" content="Michael Bely"/>
+    <meta name="copyright" content="Michael Bely">
+    <!--Цвет вкладки Chrome-->
+    <meta name="theme-color" content="#00c853">
+    <!--Иконка высокого качества для вкладки Chrome-->
+    <link rel="icon" sizes="192x192" href="icons/highres.png">
+    <!--Теги Open Graph-->
+    <meta property="og:url" content="http://michaelbel.org">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Michael Bely">
+    <meta property="og:image" content="http://michaelbel.org/images/banner.png">
+    <meta property="og:description" content="Personal website and blog">
+    <!--Импортировать таблицу стилей-->
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen, projection">
+    <!--Импорт materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen, projection">
 
 
 
-    <!--Import Google Icon Font-->
+    <!--Импорт Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen, projection" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=almnYgqQyp">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=almnYgqQyp">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=almnYgqQyp">
-    <link rel="manifest" href="/favicon/manifest.json?v=almnYgqQyp">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=almnYgqQyp" color="#00c853">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=almnYgqQyp">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=almnYgqQyp">
-    <meta name="theme-color" content="#1976D2">
-
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-
-    <meta property="og:title" content="Lawnchair: No clever tagline needed" />
-    <meta property="og:type" content="website" />
-    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-    <meta property="og:url" content="http://lawnchair.info/" />
-    <meta property="og:image" content="http://lawnchair.info/images/lawnchair-icon.png" />
-    <meta property="og:description" content="The rootless Pixel Launcher that is both heavily customizable and ships with backported Android Oreo features and tweaks." />
-    <meta name="description" content="The rootless Pixel Launcher that is both heavily customizable and ships with backported Android Oreo features and tweaks." />
-    <meta name="author" content="Jackson Hayes" />
-    <meta name="keywords" content="Android, customize, Pixel, Pixel Launcher, Google Pixel, Pixel Google, APK, free, free app, app free, home screen, homescreen" />
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.min.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102200622-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-102200622-2');
-    </script>
 </head>
 
 <body>
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"/></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <!--section color--->
     <div class="row">
         <!---Desktop Version-->
         <div id="colorBackgroundD" class="col s12 hide-on-small-only" style="min-height: 100vh; 
-        	        padding-bottom: 40px; 
-        	        padding-top: 55vh; 
-        	        background-color: #00C853; 
-        	        background: url('images/banner.png');
-        	        background-size: cover;">
+        	        padding-bottom: 40px; padding-top: 55vh; background-color: #00C853; background: url('images/banner.png'); background-size: cover;">
             <h2 class="white-text center-align">Michael Bely</h2>
             <h4 class="white-text center-align thin">No clever tagline needed</h4>
 
@@ -362,11 +335,11 @@
 
         <div class="row valign-wrapper hide-on-small-only">
             <div class="col s12 m6">
-                <h3 style="margin-top: 60px; margin-bottom: 30px;">Contact</h3>
+                <h3 style="margin-top: 30px; margin-bottom: 30px;">Contact</h3>
                 <p class="light flow-text">Nice to meet you!<br><br>If you want to contact me - please use one of the following services. Thanks!</p>
             </div>
 
-            <div class="col s12 m6" style="margin-top:70px;">
+            <div class="col s12 m6" style="margin-top:30px;">
                 <div id="linkSection">
                     <section class="tab" id="linkSection">
                         <div class="content" id="linkContent">
