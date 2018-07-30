@@ -1,0 +1,299 @@
+/*---Bio---*/
+h1.bioName {
+    font-size: 36px;
+    font-family: 'Roboto';
+    color: #212121;
+    text-decoration: none;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 1.0;
+    text-align: center;
+}
+
+p.bioDescription {
+    font-size: 20px;
+    color: #757575;
+    text-decoration: none;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+}
+
+/*---Mobile version---*/
+@media only screen and (max-height: 475px) {
+    h1.bioName {
+        font-size: 36px;
+        font-family: 'Roboto';
+        color: #212121;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        line-height: 1.0;
+    }
+
+    p.bioDescription {
+        font-size: 18px;
+        color: #757575;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+}
+
+/*---Fonts---*/
+@font-face {
+    font-family: "RobotoBold";  
+    src: url("/fonts/roboto/Roboto-Bold.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoLight";  
+    src: url("/fonts/roboto/Roboto-Light.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoMedium";  
+    src: url("/fonts/roboto/Roboto-Medium.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoRegular";  
+    src: url("/fonts/roboto/Roboto-Regular.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoThin";  
+    src: url("/fonts/roboto/Roboto-Thin.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#colorBackgroundD,
+#colorBackgroundM {
+    background: url("images/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-height: 475px) {
+    #colorBackgroundD, #colorBackgroundM {
+        /*padding-top: 300px !important;*/
+
+    }
+}
+
+#profileImageD {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: calc(10%);
+    margin-left: calc(50% - 150px);
+    margin-bottom: 40px;
+}
+
+#profileImageM {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: calc(30%);
+    margin-bottom: calc(10%);
+    margin-left: calc(50% - 100px);
+}
+
+.modal.bottom-sheet {
+    max-height: 90% !important;
+}
+
+.download:hover {
+    background-color: lightgray;
+}
+
+
+/* Bio */
+
+.bioContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.bioCard {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bioCard>img {
+    height: 120px;
+    width: auto;
+}
+
+.mdc-dialog__body {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+.thin {
+    font-weight: 300 !important;
+}
+
+.mdc-dialog__footer__button {
+    color: #00C853 !important;
+}
+
+#contact_card {
+  margin: 0 auto;
+  position: relative;
+  padding: 15px 30px 15px 30px;
+  margin-top: 22px;
+  margin-bottom: 40px;
+}
+
+#contact_card>.tab {
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+
+#contact_card>.tab>.title {
+  font-size: 16px;
+  color: #2196F3;
+  /*Change title and title icon color (Contact Card)*/
+}
+
+#contact_card>.tab>.content {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#contact_card>.tab>.content>.contacts {
+  margin: 0 20px 0 20px;
+  display: inline-block;
+  font-size: 14px;
+  color: #212121;
+}
+
+#contact_card a {
+  color: #616161;
+  text-decoration: none;
+  /*Change link color (ONLY Contact Card)*/
+}
+
+#contact_card a:hover {
+  color: #9E9E9E;
+  /*Change link color (on mouse over, ONLY Contact Card) */
+}
+
+.contact_icon {
+  font-size: 20px;
+}
+
+#linkSection {
+    margin-top: 3px;
+    margin-bottom: 8px;
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#linkContent {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#contacts {
+    margin: 0 20px 0 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #212121;
+}
+
+#content {
+    width: 500px; /* Ширина слоя */
+    margin: 0 auto 50px; /* Выравнивание по центру */
+   }
+
+/* Подвал страницы */
+.footer {
+    /*position: fixed;*/ /* Фиксированное положение */
+    left: 0; 
+    bottom: 0;
+    /* Поля вокруг текста */
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    background: #22272a;
+    /* Цвет текста */
+    color: #fff;
+    /* Ширина слоя */ 
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.content {
+    padding: 50px;
+    max-width: 1000px;
+    line-height: 22px;
+}
+
+.content h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #000000;
+    font-family: 'Roboto';
+    line-height: 1.5;
+    font-weight: 400;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.date {
+    color: #444444;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+.text {
+    color: #141414;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+.header {
+    left: 0; 
+    bottom: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background: #22272a;
+    color: #fff;
+    width: 100%;
+    font-family: 'Roboto';
+}
