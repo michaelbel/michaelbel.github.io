@@ -22,39 +22,60 @@
     padding-top: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
-    width: 900px;
+    max-width: 900px;
 }
 
 .title {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 26px;
+    display: block;
+    margin: 0;
     color: #000;
-    font-family: 'RobotoMedium';
+    font-size: 34px;
+    line-height: normal;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    float: right;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    text-align: center;
+    position: relative;
+    margin: auto;
 }
 
 .date {
+    float: left;
+    display: block;
+    font-style: normal;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #444;
-    font-family: 'Roboto';
-    font-size: 18px;
+    font-size: 20px;
+}
+
+figcaption {
+    width: 100%;
+    text-align: center;
 }
 
 .text {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #141414;
-    font-family: 'Roboto';
-    font-size: 18px;
-}
-
-.image {
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 100%;
-    height: 650px;
-    border: 1 solid #fff;
+    display: block;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #3a3a3a;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 0;
 }
 
 /*---FOOTER----------------------------------------*/
@@ -72,13 +93,13 @@
 }
 
 /*---Mobile version---*/
-@media only screen and (max-height: 475px) {
+@media only screen and (max-height: 515px) {
     .content {
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    width: 100%;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        width: auto;
 }
 
     .image {
