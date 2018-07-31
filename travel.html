@@ -12,6 +12,9 @@
 	<link rel="icon" sizes="192x192" href="static/icons/airplane.png">
 	<link type="text/css" rel="stylesheet" href="static/css/style.css" media="screen, projection">
     <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css" media="screen, projection">
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="static/js/map.js"></script>
 </head>
 
 <body>
@@ -28,7 +31,9 @@
 	<div class="container content">
 		<h1 class="title">Список посещенных территорий</h1>
 
-        <p class="overview">Посещенной территорией считается кусок земли, где было преведено какое-то время и откуда есть фотография хотя бы 640х480. Пересадки, промежуточные и транзитные места не считаются.</p>
+		<div id="map" class="map"></div>
+
+        <p class="overview">Посещенной территорией будет считается только тот кусок земли, откуда есть фотография хотя бы 640х480. Пересадки, промежуточные и транзитные места не считаются.</br></br>Если выбрать один из маркеров на карте, появится информационное окошко, из которого можно напрямую перейти к статье.</br></br>Список постоянно дополняется.</p>
 
         <ol class="list">
             <li><a href="http://michaelbel.org/travel/station">Станция Бородино</a></li>
