@@ -12,6 +12,8 @@
 	<link rel="icon" sizes="192x192" href="../static/icons/highres.png">
 	<link type="text/css" rel="stylesheet" href="css/style.css" media="screen, projection">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen, projection">
+
+    <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
 </head>
 
 <body>
@@ -30,15 +32,25 @@
 
 	<div class="content">
         <h1 class="title">Парад на Красной площади 9 мая 2010 года</h1>
+        	
+        <button id="btn" class="btn">
+			<!-- <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+				<path style="fill:#fff;" d="M12,11.5C10.62,11.5 9.5,10.38 9.5,9C9.5,7.62 10.62,6.5 12,6.5C13.38,6.5 14.5,7.62 14.5,9C14.5,10.38 13.38,11.5 12,11.5M12,2C8.13,2 5,5.13 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9C19,5.13 15.87,2 12,2Z"/>
+			</svg> -->На карте
+        </button>
 
 		<p class="date">09.05.2010</p>
 
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5237.038782779572!2d37.60398895361744!3d55.76353954573923!2m3!1f0!2f0!3f0!3m2!1i1024!	2i768!4f13.1!3m3!1m2!1s0x46b54a471b93b34d%3A0x973b1f4e854a1105!2z0KLQstC10YDRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1532984424535" 	width="100%" height="250" frameborder="0" style="border:0" allowfullscreen>
-		</iframe>
-		
-		<p class="text">Парад, посвещенный 65-й годовщине победы в Великой Отечественной войне.</p>
+		<div id="box" style="width:100%; height:250px; float:left; margin:0px 0px 10px 0px; display: none">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5237.038782779572!2d37.60398895361744!3d55.76353954573923!2m3!1f0!2f0!3f0!3m2!1i1024!	2i768!4f13.1!3m3!1m2!1s0x46b54a471b93b34d%3A0x973b1f4e854a1105!2z0KLQstC10YDRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1532984424535" 	width="100%" height="250" style="border:0" allowfullscreen>
+			</iframe>
+		</div>
 
-		<img class="image" src="photos/pobeda2010/1_20120911_012300.jpg"/>
+		<div>
+			<img src="photos/pobeda2010/1_20120911_012300.jpg" style="width:100%;"/>
+			<figcaption>Танки на Тверской! 65-я годовщина победы в ВОВ.</figcaption>
+		</div>
+
 	</div>
 
 	<footer class="footer">
@@ -94,6 +106,12 @@
             © 2018 - <a class="white-text" href="http://michaelbel.org"><b>Михаил Белый</b></a>
          </div>
     </footer>
+
+    <script>
+    	$("#btn").click(function () {
+      		$("#box").slideToggle("medium");
+    	});
+	</script>
 
 </body>
 
