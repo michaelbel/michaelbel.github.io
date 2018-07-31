@@ -1,4 +1,10 @@
-.header { /* places */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/*---HEADER---------------------------------------------------------*/
+.header {
     left: 0; 
     bottom: 0;
     padding-left: 10px;
@@ -11,37 +17,36 @@
     font-family: 'Roboto';
 }
 
-.splash { /* index */
+/*---CONTENT places--------------------------------------------------------*/
+.content {
+    min-height: 100vh;
+}
+
+/*---CONTENT index--------------------------------------------------------*/
+.splash {
+    margin: 0 0 0 0;
 	min-height: 100vh;
 	padding-top: 50vh;
 	background-size: cover;
     background: url('images/banner.png') 100% 100% no-repeat;
 }
 
-.label { /* index */
+.label {
 	color: #fff;
 	font-family: 'Roboto';
     text-align: center;
 }
 
+/*---FOOTER---------------------------------------------------------*/
 .footer {
-    left: 0; 
-    bottom: 0;
-    /* Поля вокруг текста */
     padding-left: 10px;
     padding-top: 15px;
     padding-right: 10px;
     padding-bottom: 15px;
     background: #22272a;
-    /* Цвет текста */
     color: #fff;
-    /* Ширина слоя */ 
     width: 100%;
     font-family: 'Roboto';
-}
-
-.footer-fixed {
-    position: fixed;
 }
 
 .line {
@@ -59,28 +64,26 @@
     font-weight: 500;
     font-style: normal;
     font-family: 'RobotoMedium';
-    color: #000000;
+    color: #000;
 }
 
 .overview {
     font-size: 22px;
     line-height: 1.6;
-    display: inline-block;
     color: #232323;
     font-family: 'Liberation Sans', Helvetica, Arial, sans-serif;
 }
 
 .list {
     list-style: none;
-    font-family: 'RobotoRegular';
+    line-height: 1.6;
+    font-family: 'Liberation Sans', Helvetica, Arial, sans-serif;
 }
 
 .list a {
-    width: 100%;
-    color: #808285;
+    color: #141414;
     text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'RobotoRegular';
 }
 
