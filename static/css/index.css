@@ -1,0 +1,21 @@
+.splash {
+    margin: 0 0 0 0;
+	min-height: 100vh;
+	padding-top: 50vh;
+}
+
+.footer {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    background: #22272a;
+    color: #fff;
+    width: 100%;
+}
+
+.line {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
