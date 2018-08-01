@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<meta name="theme-color" content="#22272a">
 	<link rel="icon" sizes="192x192" href="static/icons/airplane.png">
-	<link type="text/css" rel="stylesheet" href="static/css/style.css" media="screen, projection">
+	<link type="text/css" rel="stylesheet" href="static/css/travel.css" media="screen, projection">
     <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css" media="screen, projection">
 
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -29,13 +29,15 @@
 	</header>
 
 	<div class="container content">
-		<h1 class="title">Список посещенных территорий</h1>
+		<h1 class="title">Список посещенных мест</h1>
+        <p class="overview">Посещенной территорией будет считается тот кусок земли, откуда есть фотографии.</br>Пересадки, промежуточные и транзитные места не считаются.</p>
 
-		<div id="map" class="map"></div>
+        <div>
+            <div id="map"></div>
+            <figcaption>Карта пока работает не стабильно (жадный гугл требует денег за клики).</figcaption>
+        </div>
 
-        <p class="overview">Посещенной территорией будет считается только тот кусок земли, откуда есть фотография хотя бы 640х480. Пересадки, промежуточные и транзитные места не считаются.</br></br>Если выбрать один из маркеров на карте, появится информационное окошко, из которого можно напрямую перейти к статье.</br></br>Список постоянно дополняется.</p>
-
-        <ol class="list">
+        <ul>
             <li><a href="http://michaelbel.org/travel/station">Станция Бородино</a></li>
             <li><a href="http://michaelbel.org/travel/pobeda2010">Парад победы 2010</a></li>
             <li><a href="http://michaelbel.org/travel/borodino">Бородино</a></li>
@@ -51,7 +53,7 @@
             <li><a href="http://michaelbel.org/travel/gorky">Парк Горького</a></li>
             <li><a href="http://michaelbel.org/travel/zaryadye">Парк «Зарядье»</a></li>
             <li><a href="http://michaelbel.org/travel/mpei">НИУ МЭИ</a></li>
-        </ol>
+        </ul>
 	</div>
 
 	<footer class="footer footer-fixed">
@@ -104,7 +106,6 @@
                     </svg>
                 </a> -->
             </div>
-
             © 2018 - <a class="white-text" href="http://michaelbel.org"><b>Михаил Белый</b></a>
          </div>
     </footer>
