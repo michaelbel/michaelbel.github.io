@@ -1,5 +1,8 @@
-/*---HEADER----------------------------------------*/
-.header {
+body {
+    background-color: #f5f6f7;
+}
+
+header {
     background: #22272a;
     color: #fff;
     width: 100%;
@@ -14,9 +17,87 @@
     float: left;
     font-size: 18px;
     margin-right: 15px;
+    color: #fff;
 }
 
-/*---CONTENT----------------------------------------*/
+.navigation a {
+    color: #fff;
+}
+
+.navigation a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.card {
+    box-shadow: 0 1px 8px 0;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.inner {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.time {
+    color: #818181;
+    font-size: 14px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.card h1 {
+    display: block;
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.description {
+    display: block;
+    color: #232323;
+    font-size: 18px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.map-button {
+    float: right;
+    cursor: pointer;
+    background-color: #039be5;
+    color: #fff;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+.map-button:hover {
+    box-shadow: 0 2px 5px 0;
+    transition: box-shadow .2s;
+}
+
+
+
+
+
+
+
+
 .content {
     padding-left: 15px;
     padding-top: 15px;
@@ -25,31 +106,64 @@
     max-width: 900px;
 }
 
-.title {
+.content h1 {
     display: block;
-    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     color: #000;
-    font-size: 34px;
-    line-height: normal;
+    margin: 0;
+}
+
+
+
+
+
+
+.header {/*DELETE*/
+    background: #22272a;
+    color: #fff;
+    width: 100%;
+    height: 54px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.title {/*DELETE*/
+    display: block;
+    font-size: 2.1rem;
     font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.20588em;
+    color: #000;
+    margin: 0;
+}
+
+.overview {
+    display: block;
+    font-size: 18px;
+    line-height: 1em;
+    color: #232323;
+    margin-top: 5px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 .btn {
     float: right;
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     text-align: center;
     cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 2px;
     color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
+    background-color: #039be5;
     text-align: center;
     position: relative;
     margin: auto;
+    box-shadow: 0 2px 5px 0
 }
 
 .date {
@@ -71,16 +185,16 @@ figcaption {
     display: block;
     font-style: normal;
     font-size: 20px;
-    line-height: 1.6em;
+    line-height: 1.5em;
     color: #3a3a3a;
     margin-top: 10px;
     margin-bottom: 10px;
     text-indent: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-/*---FOOTER----------------------------------------*/
 .footer {
-    left: 0; 
+    left: 0;
     bottom: 0;
     padding-left: 10px;
     padding-top: 15px;
@@ -89,19 +203,28 @@ figcaption {
     background: #22272a;
     color: #fff;
     width: 100%;
-    font-family: 'Roboto';
 }
+
+.footer-text {
+    font: 500 15px Roboto, sans-serif;
+}
+
 
 /*---Mobile version---*/
 @media only screen and (max-height: 515px) {
+    .navigation {
+        float: left;
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
     .content {
         padding-left: 5px;
         padding-top: 5px;
         padding-right: 5px;
         padding-bottom: 5px;
         width: auto;
-}
-
+    }
     .image {
         width: 100%;
         height: auto;
@@ -117,7 +240,9 @@ figcaption {
     font-family: 'Liberation Sans', Helvetica, Arial, sans-serif;
 }
 
+
 /*---FONTS----------------------------------------*/
+
 @font-face {
     font-family: 'Roboto';
     src: local('Roboto Thin'), local('Roboto-Thin'), url('Robotothin.woff2') format('woff2'), url('Robotothin.woff') format('woff'), url('Robotothin.ttf') format('truetype');
