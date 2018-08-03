@@ -12,47 +12,58 @@
     <link rel="icon" sizes="192x192" href="../static/icons/airplane.png">
     <link type="text/css" rel="stylesheet" href="css/style.css" media="screen, projection">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen, projection">
-
     <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a class="navigation" href="http://michaelbel.org" title="На главную">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
-                <path style="fill:#fff;" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
-            </svg>
-        </a>
+    <header>
+        <div class="container">
+            <a class="navigation" href="http://michaelbel.org" title="На главную">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path style="fill:#fff;" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                </svg>
+            </a>
 
-        <div class="navigation">
-            <a class="white-text" href="">Россия</a> / 
-            <a class="white-text" href="">Москва</a>
+            <div class="navigation">
+                <a href="">Россия</a> /
+                <a href="">Москва</a>
+            </div>
         </div>
     </header>
+    <div class="container">
+        <div class="card" style="border-radius: 4px;">
+            <div class="inner">
+                <p class="time">04.08.2016</p>
 
-    <div class="content">
-        <h1 class="title">Фили</h1>
-        <button id="btn" class="btn">На карте</button>
-        <p class="date">04.08.2016</p>
+                <h1>Станция Фили</h1>
 
-        <div id="box" style="width:100%; height:250px; float:left; margin:0px 0px 10px 0px; display: none">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143708.24289055075!2d37.58834866445253!3d55.75083592641819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54be27ed91e79%3A0x410632ab5dd265e4!2z0KTQuNC70Lg!5e0!3m2!1sru!2sru!4v1533049940759" width="100%" height="250" style="border:0" allowfullscreen>
-            </iframe>
-        </div>
+                <p class="description"></p>
 
-        <div>
-            <img src="photos/fili/1_20160804_132652.jpg" style="width:100%;"/>
-            <figcaption>Мост пока строится.</figcaption>
-        </div>
+                <div id="btn" class="map-button">На карте</div>
+            </div>
 
-        <div>
-            <img src="photos/fili/2_20160804_124749.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Деловой центр.</figcaption>
-        </div>
+            <div id="box" style="width:100%; height:250px; float:left; margin-top:15px; display: none">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.3489768967647!2d37.60527441592986!3d55.73506528054867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b07bc0258b5%3A0x4f5e01b0e0c9ce8c!2z0J_QsNGA0Log0LjRgdC60YPRgdGB0YLQsiDQnNCj0JfQldCe0J0!5e0!3m2!1sru!2sru!4v1533232782834"
+                    width="100%" height="250" style="border:0" allowfullscreen>
+                </iframe>
+            </div>
 
-        <div>
-            <img src="photos/fili/3_20160804_131009.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Уточки.</figcaption>
+            <div class="inner">
+                <div>
+                    <img src="photos/fili/1_20160804_132652.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Мост пока строится.</figcaption>
+                </div>
+
+                <div>
+                    <img src="photos/fili/2_20160804_124749.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Деловой центр.</figcaption>
+                </div>
+
+                <div>
+                    <img src="photos/fili/3_20160804_131009.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Уточки.</figcaption>
+                </div>
+            </div>
         </div>
     </div>
 
