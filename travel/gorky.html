@@ -12,67 +12,77 @@
     <link rel="icon" sizes="192x192" href="../static/icons/airplane.png">
     <link type="text/css" rel="stylesheet" href="css/style.css" media="screen, projection">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen, projection">
-
     <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
 </head>
 
 <body>
-	<header class="header">
-        <a class="navigation" href="http://michaelbel.org" title="На главную">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
-                <path style="fill:#fff;" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
-            </svg>
-        </a>
+    <header>
+        <div class="container">
+            <a class="navigation" href="http://michaelbel.org" title="На главную">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path style="fill:#fff;" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                </svg>
+            </a>
 
-        <div class="navigation">
-            <a class="white-text" href="">Россия</a> / 
-            <a class="white-text" href="">Москва</a>
+            <div class="navigation">
+                <a href="">Россия</a> /
+                <a href="">Москва</a>
+            </div>
         </div>
     </header>
+    <div class="container">
+        <div class="card" style="border-radius: 4px;">
+            <div class="inner">
+                <p class="time">29.07.2018</p>
 
-	<div class="content">
-        <h1 class="title">Центральный парк культуры и отдыха имени Максима Горького</h1>
-        <button id="btn" class="btn">На карте</button>
-        <p class="date">29.07.2018</p>
+                <h1>Парк Горького</h1>
 
-        <div id="box" style="width:100%; height:250px; float:left; margin:0px 0px 10px 0px; display: none">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15114.506183031346!2d37.592312613751325!3d55.727491385651824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b08f8fdcbc3%3A0x4375cd8bcd701ff0!2z0KbQtdC90YLRgNCw0LvRjNC90YvQuSDQv9Cw0YDQuiDQutGD0LvRjNGC0YPRgNGLINC4INC-0YLQtNGL0YXQsCDQuNC8LiDQnC7Qk9C-0YDRjNC60L7Qs28!5e0!3m2!1sru!2sru!4v1533055568128" width="100%" height="250" style="border:0" allowfullscreen>
-            </iframe>
-        </div>
+                <p class="description">Центральный парк культуры и отдыха имени Максима Горького.</p>
 
-        <div>
-            <img src="photos/gorky/1_20180729_153446.jpg" style="width:100%;"/>
-            <figcaption>Добро пожаловать в парк Горького!</figcaption>
-        </div>
+                <div id="btn" class="map-button">На карте</div>
+            </div>
 
-        <div>
-            <img src="photos/gorky/2_20180729_151754.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Максим Горький, к слову, один из моих любимых писателей.</figcaption>
-        </div>
+            <div id="box" style="width:100%; height:250px; float:left; margin-top:15px; display: none">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15114.506183031346!2d37.592312613751325!3d55.727491385651824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b08f8fdcbc3%3A0x4375cd8bcd701ff0!2z0KbQtdC90YLRgNCw0LvRjNC90YvQuSDQv9Cw0YDQuiDQutGD0LvRjNGC0YPRgNGLINC4INC-0YLQtNGL0YXQsCDQuNC8LiDQnC7Qk9C-0YDRjNC60L7Qs28!5e0!3m2!1sru!2sru!4v1533055568128" width="100%" height="250" style="border:0" allowfullscreen>
+                </iframe>
+            </div>
 
-        <div>
-            <img src="photos/gorky/3_20180729_152424.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Похоже, что люди отдыхают.</figcaption>
-        </div>
+            <div class="inner">
+                <div>
+                    <img src="photos/gorky/1_20180729_153446.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Добро пожаловать в парк Горького!</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/gorky/4_20180729_152603.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Какое-то мост через реку.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/gorky/2_20180729_151754.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Максим Горький, к слову, один из моих любимых писателей.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/gorky/5_20180729_152608.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Какое-то здание по ту сторону реки.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/gorky/3_20180729_152424.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Похоже, что люди отдыхают.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/gorky/6_20180729_152613.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Собственно, сама река.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/gorky/4_20180729_152603.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Какое-то мост через реку.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/gorky/7_20180729_153853.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Ну и на этом все.</figcaption>
+                <div>
+                    <img src="photos/gorky/5_20180729_152608.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Какое-то здание по ту сторону реки.</figcaption>
+                </div>
+
+                <div>
+                    <img src="photos/gorky/6_20180729_152613.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Собственно, сама река.</figcaption>
+                </div>
+
+                <div>
+                    <img src="photos/gorky/7_20180729_153853.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Ну и на этом все.</figcaption>
+                </div>
+            </div>
         </div>
     </div>
 
