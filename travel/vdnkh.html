@@ -17,47 +17,56 @@
 </head>
 
 <body>
-    <header class="header">
-        <a class="navigation" href="http://michaelbel.org" title="На главную">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
-                <path style="fill:#fff;" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
-            </svg>
-        </a>
+    <header>
+        <div class="container">
+            <a class="navigation" href="http://michaelbel.org" title="На главную">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path style="fill:#fff;" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                </svg>
+            </a>
 
-        <div class="navigation">
-            <a class="white-text" href="">Россия</a> / 
-            <a class="white-text" href="">Москва</a>
+            <div class="navigation">
+                <a href="">Россия</a> /
+                <a href="">Москва</a>
+            </div>
         </div>
     </header>
 
-    <div class="content">
-        <h1 class="title">Выставка достижений народного хозяйства (ВДНХ)</h1>
-        <button id="btn" class="btn">На карте</button>
-        <p class="date">14.07.2012, 16.08.2012, 12.09.2012, 07.05.2013</p>
+    <div class="container">
+        <div class="card" style="border-radius: 4px;">
+            <div class="inner">
+                <p class="time">14.07.2012; 16.08.2012; 12.09.2012; 07.05.2013</p>
+                <h1>ВДНХ</h1>
+                <p class="description">Выставка достижений народного хозяйства.</p>
+                <div id="btn" class="map-button">На карте</div>
+            </div>
 
-        <div id="box" style="width:100%; height:250px; float:left; margin:0px 0px 10px 0px; display: none">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.8248130894!2d37.6276112159336!3d55.83099998057431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b536676b2e6f75%3A0x91bd12197c6a68a1!2z0JLRi9GB0YLQsNCy0LrQsCDQtNC-0YHRgtC40LbQtdC90LjQuSDQvdCw0YDQvtC00L3QvtCz0L4g0YXQvtC30Y_QudGB0YLQstCwICjQktCU0J3QpSk!5e0!3m2!1sru!2sru!4v1533051968119" width="100%" height="250" style="border:0" allowfullscreen>
-            </iframe>
-        </div>
+            <div id="box" style="width:100%; height:250px; float:left; margin:15px 0px 0px 0px; display: none">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.8248130894!2d37.6276112159336!3d55.83099998057431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b536676b2e6f75%3A0x91bd12197c6a68a1!2z0JLRi9GB0YLQsNCy0LrQsCDQtNC-0YHRgtC40LbQtdC90LjQuSDQvdCw0YDQvtC00L3QvtCz0L4g0YXQvtC30Y_QudGB0YLQstCwICjQktCU0J3QpSk!5e0!3m2!1sru!2sru!4v1533051968119" width="100%" height="250" style="border:0" allowfullscreen>
+                </iframe>
+            </div>
 
-        <div>
-            <img src="photos/vdnkh/1_20120714_194400.jpg" style="width:100%;"/>
-            <figcaption>Фонтан дружбы народов.</figcaption>
-        </div>
+            <div class="inner">
+                <div>
+                    <img src="photos/vdnkh/1_20120714_194400.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Фонтан дружбы народов.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/vdnkh/2_20120816_165100.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Колесо имени 850-летия Москвы.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/vdnkh/2_20120816_165100.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Колесо имени 850-летия Москвы.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/vdnkh/3_20120912_134000.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Самый обычный вертолет.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/vdnkh/3_20120912_134000.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Самый обычный вертолет.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/vdnkh/4_20130507_182000.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Монорельс.</figcaption>
+                <div>
+                    <img src="photos/vdnkh/4_20130507_182000.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Монорельс.</figcaption>
+                </div>
+            </div>
         </div>
     </div>
 
