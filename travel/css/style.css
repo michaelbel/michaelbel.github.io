@@ -43,6 +43,13 @@ header {
     padding-bottom: 20px;
 }
 
+.layout {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
 .time {
     color: #818181;
     font-size: 14px;
@@ -114,11 +121,6 @@ header {
     color: #000;
     margin: 0;
 }
-
-
-
-
-
 
 .header {/*DELETE*/
     background: #22272a;
@@ -209,8 +211,6 @@ figcaption {
     font: 500 15px Roboto, sans-serif;
 }
 
-
-/*---Mobile version---*/
 @media only screen and (max-height: 515px) {
     .navigation {
         float: left;
@@ -225,10 +225,18 @@ figcaption {
         padding-bottom: 5px;
         width: auto;
     }
+
     .image {
         width: 100%;
         height: auto;
         border: 1;
+    }
+
+    .layout {
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-right: 0px;
+        padding-bottom: 20px;
     }
 }
 
@@ -239,9 +247,6 @@ figcaption {
     color: #232323;
     font-family: 'Liberation Sans', Helvetica, Arial, sans-serif;
 }
-
-
-/*---FONTS----------------------------------------*/
 
 @font-face {
     font-family: 'Roboto';
