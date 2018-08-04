@@ -17,38 +17,47 @@
 </head>
 
 <body>
-	<header class="header">
-        <a class="navigation" href="http://michaelbel.org" title="На главную">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
-                <path style="fill:#fff;" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
-            </svg>
-        </a>
+    <header>
+        <div class="container">
+            <a class="navigation" href="http://michaelbel.org" title="На главную">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path style="fill:#fff;" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                </svg>
+            </a>
 
-        <div class="navigation">
-            <a class="white-text" href="">Россия</a> / 
-            <a class="white-text" href="">Московская область</a> /
-            <a class="white-text" href="">Солнечногорск</a>
+            <div class="navigation">
+                <a href="">Россия</a> /
+                <a href="">Московская область</a> /
+                <a href="">Солнечногорск</a>
+            </div>
         </div>
     </header>
 
-	<div class="content">
-        <h1 class="title">Сенежское озеро (водохранилище)</h1>
-        <button id="btn" class="btn">На карте</button>
-        <p class="date">29.04.2018</p>
+    <div class="container">
+        <div class="card" style="border-radius: 4px;">
+            <div class="inner">
+                <p class="time">29.04.2018</p>
+                <h1>Сенежское озеро (водохранилище)</h1>
+                <p class="description"></p>
+                <div id="btn" class="map-button">На карте</div>
+            </div>
 
-        <div id="box" style="width:100%; height:250px; float:left; margin:0px 0px 10px 0px; display: none">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28732.082093943904!2d36.98738828602707!3d56.202671906583035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b508a5e8d52cff%3A0xe897702a05142712!2z0KHQtdC90LXQttGB0LrQvtC1INC-0Lcu!5e0!3m2!1sru!2sru!4v1533047918095" width="100%" height="250" style="border:0" allowfullscreen>
-            </iframe>
-        </div>
+            <div id="box" style="width:100%; height:250px; float:left; margin:15px 0px 0px 0px; display: none">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28732.082093943904!2d36.98738828602707!3d56.202671906583035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b508a5e8d52cff%3A0xe897702a05142712!2z0KHQtdC90LXQttGB0LrQvtC1INC-0Lcu!5e0!3m2!1sru!2sru!4v1533047918095" width="100%" height="250" style="border:0" allowfullscreen>
+                </iframe>
+            </div>
 
-        <div>
-            <img src="photos/senezh/1_20180430_124244.jpg" style="width:100%;"/>
-            <figcaption>Раз.</figcaption>
-        </div>
+            <div class="inner">
+                <div>
+                    <img src="photos/senezh/1_20180430_124244.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Раз.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/senezh/2_20180429_083057.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>И два.</figcaption>
+                <div>
+                    <img src="photos/senezh/2_20180429_083057.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>И два.</figcaption>
+                </div>
+            </div>
         </div>
     </div>
 
