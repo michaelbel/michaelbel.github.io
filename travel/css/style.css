@@ -211,7 +211,7 @@ figcaption {
     font: 500 15px Roboto, sans-serif;
 }
 
-@media only screen and (max-height: 515px) {
+@media only screen and (max-width: 515px) {
     .navigation {
         float: left;
         font-size: 14px;
