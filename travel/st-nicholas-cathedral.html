@@ -12,108 +12,116 @@
     <link rel="icon" sizes="192x192" href="../static/icons/airplane.png">
     <link type="text/css" rel="stylesheet" href="css/style.css" media="screen, projection">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen, projection">
-
     <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a class="navigation" href="http://michaelbel.org" title="На главную">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
-                <path style="fill:#fff;" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
-            </svg>
-        </a>
+    <header>
+        <div class="container">
+            <a class="navigation" href="http://michaelbel.org" title="На главную">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path style="fill:#fff;" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                </svg>
+            </a>
 
-        <div class="navigation">
-            <a class="white-text" href="">Россия</a> / 
-            <a class="white-text" href="">Московская область</a> / 
-            <a class="white-text" href="">Можайск</a>
+            <div class="navigation">
+                <a href="">Россия</a> /
+                <a href="">Московская область</a> /
+                <a href="">Можайск</a>
+            </div>
         </div>
     </header>
 
-    <div class="content">
-        <h1 class="title">Ново-Никольский собор в Можайске</h1>
-        <button id="btn" class="btn">На карте</button>
-        <p class="date">23.10.2016</p>
+    <div class="container">
+        <div class="card" style="border-radius: 4px;">
+            <div class="inner">
+                <p class="time">23.10.2016</p>
+                <h1>Ново-Никольский собор в Можайске</h1>
+                <p class="description"></p>
+                <div id="btn" class="map-button">На карте</div>
+            </div>
 
-        <div id="box" style="width:100%; height:250px; float:left; margin:0px 0px 10px 0px; display: none">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4348.007270471467!2d36.01098271471807!3d55.50879394853155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46caf321355aad3d%3A0x282774c08ab648a!2z0J3QvtCy0L4t0J3QuNC60L7Qu9GM0YHQutC40Lkg0YHQvtCx0L7RgA!5e0!3m2!1sru!2sru!4v1533053335753" width="100%" height="250" style="border:0" allowfullscreen>
-            </iframe>
-        </div>
+            <div id="box" style="width:100%; height:250px; float:left; margin:15px 0px 0px 0px; display: none">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4348.007270471467!2d36.01098271471807!3d55.50879394853155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46caf321355aad3d%3A0x282774c08ab648a!2z0J3QvtCy0L4t0J3QuNC60L7Qu9GM0YHQutC40Lkg0YHQvtCx0L7RgA!5e0!3m2!1sru!2sru!4v1533053335753" width="100%" height="250" style="border:0" allowfullscreen>
+                </iframe>
+            </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/01_20161023_173057.jpg" style="width:100%;"/>
-            <figcaption>Главное здание.</figcaption>
-        </div>
+            <div class="inner">
+                <div>
+                    <img src="photos/st-nicholas-cathedral/01_20161023_173057.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Главное здание.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/02_20161023_173028.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Внутри кто-то есть.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/02_20161023_173028.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Внутри кто-то есть.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/03_20161023_173015.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Уже темнеет.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/03_20161023_173015.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Уже темнеет.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/04_20161023_172740.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Русская псевдоготика.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/04_20161023_172740.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Русская псевдоготика.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/05_20161023_173010.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Мини-версия.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/05_20161023_173010.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Мини-версия.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/06_20161023_170919.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Деревянная версия.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/06_20161023_170919.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Деревянная версия.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/07_20161023_170752.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Вдалеке на постройке стоит коза.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/07_20161023_170752.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Вдалеке на постройке стоит коза.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/08_20161023_170756.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Дома распологаются в низине под собором.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/08_20161023_170756.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Дома распологаются в низине под собором.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/09_20161023_170805.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Какой-то хуй портит кадр.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/09_20161023_170805.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Какой-то хуй портит кадр.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/10_20161023_170926.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Деревня.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/10_20161023_170926.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Деревня.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/11_20161023_170931.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Приблизил.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/11_20161023_170931.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Приблизил.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/12_20161023_170748.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Приблизил козу.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/12_20161023_170748.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Приблизил козу.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/13_20161023_171446.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Кетейка.</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/13_20161023_171446.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Кетейка.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/14_20161023_171448.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>Кесулькен</figcaption>
-        </div>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/14_20161023_171448.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>Кесулькен.</figcaption>
+                </div>
 
-        <div>
-            <img src="photos/st-nicholas-cathedral/15_20161023_171121.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
-            <figcaption>¯\_(ツ)_/¯</figcaption>
+                <div>
+                    <img src="photos/st-nicholas-cathedral/15_20161023_171121.jpg" style="width:100%; margin:15px 0px 0px 0px;"/>
+                    <figcaption>¯\_(ツ)_/¯</figcaption>
+                </div>
+            </div>
         </div>
     </div>
 
