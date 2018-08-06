@@ -27,7 +27,8 @@ var markers = [
     { lat: 55.7515997, lng: 37.6262287, name: "Парк «Зарядье»", address:"http://michaelbel.org/travel/zaryadye" },
     { lat: 55.7553254, lng: 37.7070249, name: "НИУ МЭИ", address:"http://michaelbel.org/travel/mpei" },
     { lat: 55.7350653, lng: 37.6052744, name: "Парк искусств «Музеон»", address:"http://michaelbel.org/travel/muzeon" },
-    { lat: 55.6214425, lng: 37.558599, name: "Битцевский лес", address:"http://michaelbel.org/travel/bitsa" }
+    { lat: 55.6214425, lng: 37.558599, name: "Битцевский лес", address:"http://michaelbel.org/travel/bitsa" },
+    { lat: 55.8046385, lng: 37.4154491, name: "Парк «Москворецкий»", address:"http://michaelbel.org/travel/moskvoretsky" }
 ];
 
 var map, infoWindow;
