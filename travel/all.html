@@ -4,7 +4,7 @@
 © 2018 Michael Bely
 -->
 <head>
-	<title>Список городов</title>
+	<title>Все посещенные территории</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,7 +13,7 @@
 	<link type="text/css" rel="stylesheet" href="../static/css/travel.css" media="screen, projection">
     <link type="text/css" rel="stylesheet" href="../static/css/materialize.min.css" media="screen, projection">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="../static/js/map-cities.js"></script>
+    <script src="../static/js/map-all.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             </a>
 
             <div class="navigation">
-                <a href="">Города</a>
+                <a href="">Все посещенные территории</a>
             </div>
         </div>
 	</header>
@@ -35,49 +35,41 @@
         <div class="card" style="border-radius: 4px;">
 			<div>
 	            <div id="map"></div>
-	            <figcaption>Карта городов.</figcaption>
+	            <figcaption>Карта всех посещенных территорий.</figcaption>
 	        </div>
 
 			<div class="inner">
 				<ul class="view">
 					<li class="viewtitle">Отобразить:</li>
 		            <li><a href="http://michaelbel.org/travel">По странам</a></li>
-		            <li><a href="http://michaelbel.org/travel/cities" style="color: #1565c0;">По городам</a></li>
-		            <li><a href="http://michaelbel.org/travel/all">Подробно</a></li>
+		            <li><a href="http://michaelbel.org/travel/cities">По городам</a></li>
+		            <li><a href="http://michaelbel.org/travel/all" style="color: #1565c0;">Подробно</a></li>
 				</ul>
 			</div>
 
             <div class="inner">
-				<ul>
-					<li><span>М</span>
-						<a href="http://michaelbel.org/travel/mozhaysk">Можайск</a>
-						<!--<a class="place" href="http://michaelbel.org/travel/mozhaysk/#">Ново-Никольский собор</a>,
-						<a class="place" href="http://michaelbel.org/travel/mozhaysk/#">Станция Бородино</a>,
-						<a class="place" href="http://michaelbel.org/travel/mozhaysk/#">Бородинское поле</a>-->
-					</li>
-					<li><span>&nbsp;</span>
-						<a href="http://michaelbel.org/travel/moscow">Москва</a>
-						<!--<a class="place" href="http://michaelbel.org/travel/moscow/#">Парад победы 2010</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Станция Фили</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">ВДНХ</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Музей-панорама «Бородинская битва»</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Парк Победы на Поклонной горе</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Кронштадский бульвар</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Парк «Измайлово»</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Парк «Коломенское»</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Парк Горького</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Парк «Зарядье»</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">НИУ МЭИ</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Парк искусств «Музеон»</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Битцевский лес</a>,
-						<a class="place" href="http://michaelbel.org/travel/moscow/#">Парк «Москворецкий»</a>-->
-					</li>
-
-					<li><span>С</span>
-						<a href="http://michaelbel.org/travel/solnechnogorsk">Солнечногорск</a>
-						<!--<a class="place" href="http://michaelbel.org/travel/solnechnogorsk/#senezh">Сенежское озеро</a>-->
-					</li>
-		        </ul>
+				<!--<div class="inner">
+					<ul>
+			            <li><a href="http://michaelbel.org/travel/station">Станция Бородино</a></li>
+			            <li><a href="http://michaelbel.org/travel/pobeda2010">Парад победы 2010</a></li>
+			            <li><a href="http://michaelbel.org/travel/borodino">Бородино</a></li>
+			            <li><a href="http://michaelbel.org/travel/fili">Станция Фили</a></li>
+			            <li><a href="http://michaelbel.org/travel/vdnkh">ВДНХ</a></li>
+			            <li><a href="http://michaelbel.org/travel/st-nicholas-cathedral">Ново-Никольский собор</a></li>
+			            <li><a href="http://michaelbel.org/travel/panorama">Музей-панорама «Бородинская битва»</a></li>
+			            <li><a href="http://michaelbel.org/travel/poklonnaya">Парк Победы на Поклонной горе</a></li>
+			            <li><a href="http://michaelbel.org/travel/kronstadt-boulevard">Кронштадский бульвар</a></li>
+			            <li><a href="http://michaelbel.org/travel/senezh">Сенежское озеро</a></li>
+			            <li><a href="http://michaelbel.org/travel/izmaylovsky">Парк «Измайлово»</a></li>
+			            <li><a href="http://michaelbel.org/travel/kolomenskoye">Парк «Коломенское»</a></li>
+			            <li><a href="http://michaelbel.org/travel/gorky">Парк Горького</a></li>
+			            <li><a href="http://michaelbel.org/travel/zaryadye">Парк «Зарядье»</a></li>
+			            <li><a href="http://michaelbel.org/travel/mpei">НИУ МЭИ</a></li>
+						<li><a href="http://michaelbel.org/travel/muzeon">Парк искусств «Музеон»</a></li>
+						<li><a href="http://michaelbel.org/travel/bitsa">Битцевский лес</a></li>
+						<li><a href="http://michaelbel.org/travel/moskvoretsky">Парк «Москворецкий»</a></li>
+			        </ul>
+				</div>-->
 			</div>
         </div>
     </div>
