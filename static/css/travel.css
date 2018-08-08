@@ -124,6 +124,33 @@ li span {
     text-align: center;
 }
 
+ul.view {
+    margin: 0;
+    padding: 4px;
+}
+
+ul.view li {
+    display: inline;
+    margin-right: 5px;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 3px;
+}
+
+ul.view li a {
+    font-size: 18px;
+}
+
+ul.view li a:hover {
+    color: #1565c0;
+}
+
+ul.view li.viewtitle {
+    text-decoration: none;
+    border-bottom: 0;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
 @font-face {
     font-family: 'Roboto';
     src: local('Roboto Thin'), local('Roboto-Thin'), url('Robotothin.woff2') format('woff2'), url('Robotothin.woff') format('woff'), url('Robotothin.ttf') format('truetype');
