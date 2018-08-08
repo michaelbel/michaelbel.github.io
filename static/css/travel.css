@@ -87,20 +87,41 @@ footer hr {
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     line-height: 2.0;
     margin-left: 15px;
-    font-size: 18px;
-    font-family: 'Roboto';
+	padding-left: 0px;
 }
 
 li a {
     text-decoration: none;
     color: #141414;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+li a.place {
+    text-decoration: none;
+    color: #424242;
+    font-size: 17px;
+    font-family: 'Roboto';
+    border-bottom: 1px solid;
 }
 
 li a:hover {
     color: #009688;
+}
+
+/***************/
+
+li span {
+    display: inline-block;
+	width: 40px;
+    margin-right: 20px;
+    font-size: 22px;
+    font-family: 'Roboto';
+    color: #ff0266;
+    text-align: center;
 }
 
 @font-face {
@@ -141,7 +162,7 @@ li a:hover {
 }
 @font-face {
     font-family: 'RobotoMedium';
-    src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/roboto/Robotomedium.woff2') format('woff2'), url('../fonts/roboto/Robotomedium.woff') format('woff'), url('../fonts/roboto/Robotomedium.ttf') format('truetype');
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/roboto/Robotomedium.woff2') format('woff2'), url('..static/fonts/roboto/Robotomedium.woff') format('woff'), url('../fonts/roboto/Robotomedium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
