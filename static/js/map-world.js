@@ -1,5 +1,6 @@
 var markers = [
-    {lat: 41.8282841, lng: 55.9106726, country: "Россия", url:"http://michaelbel.org/travel"}
+    {lat: 59.5948255, lng: 89.4373294, country: "Россия", url:"http://michaelbel.org/travel"},
+    {lat: 46.9578225, lng: 26.1467459, country: "Молдова", url:"http://michaelbel.org/travel"}
 ];
 
 var map, infoWindow;
