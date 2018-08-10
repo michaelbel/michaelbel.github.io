@@ -1,5 +1,8 @@
 body {
-    background-color: #f5f6f7;
+    background: linear-gradient(to bottom right, #fccb90, #d57eeb);
+    background: linear-gradient(to bottom right, #d4fc79, #96e6a1);
+    background: linear-gradient(to bottom right, #84fab0, #8fd3f4);
+    background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
 }
 
 header {
@@ -11,6 +14,24 @@ header {
     padding-top: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
 }
 
 .navigation {
@@ -26,7 +47,7 @@ header {
 
 .navigation a:hover {
     color: #fff;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .card {
@@ -36,14 +57,7 @@ header {
     height: auto;
 }
 
-.inner {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-.layout {
+.inner, .layout {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -53,29 +67,29 @@ header {
 .time {
     color: #818181;
     font-size: 14px;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    line-height: 38px;
 }
 
 .card h1 {
     display: block;
     color: #000;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 500;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    padding-top: 10px;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+    /*padding-top: 10px;*/
     margin: 0;
     text-align: left;
+    line-height: 36px;
 }
 
 .card h2 {
     display: block;
     color: #000;
-    font-size: 24px;
-    font-weight: 500;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    padding-top: 10px;
+    font-size: 28px;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
     margin: 0;
     text-align: left;
 }
@@ -84,29 +98,31 @@ header {
     display: block;
     color: #232323;
     font-size: 18px;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
     line-height: 1.5;
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     margin: 0;
 }
 
 .map-button {
+    display: inline-block;
     float: right;
     cursor: pointer;
     background-color: #039be5;
     color: #fff;
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-right: 16px;
-    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
     font-size: 14px;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
     text-align: center;
     font-weight: normal;
     border-radius: 2px;
 }
 
 .map-button:hover {
-    box-shadow: 0 2px 5px 0;
+    box-shadow: 0px 2px 2px #ccc;
     transition: box-shadow .2s;
 }
 
@@ -127,13 +143,48 @@ footer {
     width: 100%;
 }
 
+footer .f-nav {
+    line-height: 22px;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+}
+
 footer hr {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .links {
+    text-align: center;
+    line-height: 24px;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+}
+
+footer .links a {
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
 }
 
 .footer-text {
     font: 500 15px Roboto, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 515px) {
@@ -254,55 +305,4 @@ footer hr {
     src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url('Robotoblackitalic.woff2') format('woff2'), url('Robotoblackitalic.woff') format('woff'), url('Robotoblackitalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-div.image {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-    color: #c6c6c6;
-    border-style: none;
-}
-
-ins.slideshow {
-    display: inline-block;
-    padding-bottom: 0;
-    text-align: center;
-}
-
-ins.slideshow ins {
-    position: relative;
-    float: left;
-    clear: none;
-    cursor: pointer;
-}
-
-ins.slideshow ins ins {
-    position: relative;
-    z-index: 999;
-    margin-top: 14px;
-    margin-bottom: 0;
-    text-align: center;
-    float: none;
-    clear: none;
-    display: inherit;
-}
-
-ins.slideshow ins ins ins.selected {
-    transition: all .3s ease;
-    background-color: #72acdd;
 }
