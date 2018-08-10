@@ -129,6 +129,8 @@ header {
 figcaption {
     width: 100%;
     text-align: center;
+    font-size: 14px;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
 }
 
 footer {
