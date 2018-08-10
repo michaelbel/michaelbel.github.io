@@ -4,7 +4,7 @@
 	padding-top: 50vh;
 }
 
-.footer {
+footer {
     padding-left: 10px;
     padding-top: 15px;
     padding-right: 10px;
@@ -14,8 +14,28 @@
     width: 100%;
 }
 
-.line {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+footer hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .nav {
+    line-height: 22px;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    font-size: 16px;
+    color: #fff;
+}
+
+footer .links {
+    text-align: center;
+    line-height: 24px;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer .links a {
+    color: #fff;
 }
