@@ -40,9 +40,9 @@ body {
 .layout .text {
     margin: 0;
     display: block;
-    color: #232323;
+    color: #454545;
     font-size: 18px;
-    font-family: 'Google Sans', 'Roboto', sans-serif;
+    font-weight: 600;
     line-height: 1.5;
 }
 
@@ -103,8 +103,8 @@ body {
 .card h2 {
     margin: 0;
     display: block;
-    font-family: 'Google Sans', 'Roboto', sans-serif;
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 24px;
     text-align: left;
     color: #000;
 }
@@ -112,7 +112,7 @@ body {
 .description {
     margin: 0;
     display: block;
-    color: #232323;
+    color: #454545;
     font-size: 18px;
     font-family: 'Google Sans', 'Roboto', sans-serif;
     line-height: 1.5;
@@ -144,7 +144,8 @@ figcaption {
     width: 100%;
     text-align: center;
     font-size: 14px;
-    font-family: 'Google Sans', 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #454545;
 }
 
 span {
