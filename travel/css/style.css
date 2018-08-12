@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+    background: linear-gradient(to bottom right, #f5f6f7, #f5f6f7);
 }
 
 header {
@@ -175,51 +175,6 @@ figcaption {
     text-align: center;
     font-size: 14px;
     font-family: 'Google Sans', 'Roboto', sans-serif;
-}
-
-footer {
-    left: 0;
-    bottom: 0;
-    padding-left: 10px;
-    padding-top: 15px;
-    padding-right: 10px;
-    padding-bottom: 15px;
-    background: #22272a;
-    color: #fff;
-    width: 100%;
-}
-
-footer .f-nav {
-    line-height: 22px;
-    font-family: 'Google Sans', 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    color: #fff;
-}
-
-footer hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-footer .links {
-    text-align: center;
-    line-height: 24px;
-    font-family: 'Google Sans', 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    color: #fff;
-}
-
-footer .links a {
-    font-family: 'Google Sans', 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    color: #fff;
-}
-
-.footer-text {
-    font: 500 15px Roboto, sans-serif;
 }
 
 .grid {
