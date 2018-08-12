@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.inner {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+.inner h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #454545;
+    text-align: left;
+    line-height: 2.0;
+    font-weight: 600;
+}
+
+.inner p {
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    border-bottom: 1px #000;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 2.0;
+}
+
+li a {
+    text-decoration: none;
+    color: #0076ff;
+    border-bottom: 1px solid rgba(0, 118, 255, .2);
+    transition-property: border-bottom, border-color, color, fill;
+    transition-duration: .15s;
+    transition-timing-function: ease-out;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+li a:hover {
+    color: #ff3824;
+    border-bottom-color: rgba(255, 56, 36, .2)
+}
+
+li span {
+    display: inline-block;
+	width: 40px;
+    margin-right: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    font-family: 'gilroy', Arial, Helvetica, sans-serif;
+}
