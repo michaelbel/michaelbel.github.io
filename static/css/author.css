@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.stars p {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+
+.chip2 {
+    display: inline-block;
+    padding: 7px 14px 7px 14px;
+    border-radius: 18px;
+    background-color: #69F0AE;
+}
+
+.chip3 {
+    display: inline-block;
+    padding: 7px 14px 7px 14px;
+    border-radius: 18px;
+    background-color: #FF8A80;
+}
+
+.container {
+    flex-grow: 1;
+}
+
+.inner {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+.inner h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    color: #212121;
+    text-align: left;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 2.0;
+}
+
+li {
+    padding-left: 40px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1875rem;
+    font-family: 'lora', Georgia, serif;
+}
+
+::selection {
+    background: rgba(0, 0, 0, 0.99);
+    color: #fff;
+    opacity: 1;
+}
