@@ -1,30 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
 
+::selection {
+    background: rgba(0, 0, 0, 0.99);
+    color: #fff;
+    opacity: 1;
+}
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #FFF;
 }
 
-.stars p {
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    padding: 20px;
-}
-
-.chip2 {
+.chip-green {
     display: inline-block;
-    padding: 7px 14px 7px 14px;
-    border-radius: 18px;
+    padding: 6px 13px 6px 13px;
+    border-radius: 4px;
     background-color: #69F0AE;
 }
 
-.chip3 {
+.chip-red {
     display: inline-block;
-    padding: 7px 14px 7px 14px;
-    border-radius: 18px;
+    padding: 6px 13px 6px 13px;
+    border-radius: 4px;
     background-color: #FF8A80;
 }
 
@@ -42,7 +42,7 @@ body {
 .inner h1 {
     margin: 0;
     padding: 0;
-    font-size: 28px;
+    font-size: 27px;
     color: #212121;
     text-align: left;
     font-weight: 600;
@@ -50,7 +50,7 @@ body {
 
 ul {
     list-style-type: none;
-    line-height: 2.0;
+    line-height: 1.90;
 }
 
 li {
@@ -61,8 +61,41 @@ li {
     font-family: 'lora', Georgia, serif;
 }
 
-::selection {
-    background: rgba(0, 0, 0, 0.99);
-    color: #fff;
-    opacity: 1;
+.stars p {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+
+.sj-image {
+    width: 70%;
+    align: center;
+}
+
+.sj {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 515px) {
+    .inner h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        color: #212121;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    li {
+        padding-left: 0px;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.1875rem;
+    }
+
+    .sj-image {
+        width: 100%;
+    }
 }
