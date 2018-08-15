@@ -14,20 +14,6 @@ body {
     background-color: #FFF;
 }
 
-.chip-green {
-    display: inline-block;
-    padding: 6px 13px 6px 13px;
-    border-radius: 4px;
-    background-color: #69F0AE;
-}
-
-.chip-red {
-    display: inline-block;
-    padding: 6px 13px 6px 13px;
-    border-radius: 4px;
-    background-color: #FF8A80;
-}
-
 .container {
     flex-grow: 1;
 }
@@ -46,6 +32,20 @@ body {
     color: #212121;
     text-align: left;
     font-weight: 600;
+}
+
+.chip-green {
+    display: inline-block;
+    padding: 6px 13px 6px 13px;
+    border-radius: 4px;
+    background-color: #69F0AE;
+}
+
+.chip-red {
+    display: inline-block;
+    padding: 6px 13px 6px 13px;
+    border-radius: 4px;
+    background-color: #FF8A80;
 }
 
 ul {
@@ -70,7 +70,7 @@ li {
 
 .sj-image {
     width: 70%;
-    align: center;
+    height: auto;
 }
 
 .sj {
@@ -82,10 +82,29 @@ li {
     .inner h1 {
         margin: 0;
         padding: 0;
-        font-size: 18px;
+        font-size: 16px;
         color: #212121;
         text-align: left;
         font-weight: 600;
+    }
+
+    .chip-green {
+        display: inline-block;
+        padding: 6px 13px 6px 13px;
+        border-radius: 4px;
+        background-color: #69F0AE;
+    }
+
+    .chip-red {
+        display: inline-block;
+        padding: 6px 13px 6px 13px;
+        border-radius: 4px;
+        background-color: #FF8A80;
+    }
+
+    ul {
+        list-style-type: none;
+        line-height: 1.90;
     }
 
     li {
@@ -97,5 +116,11 @@ li {
 
     .sj-image {
         width: 100%;
+        height: auto;
+    }
+
+    .sj {
+        font-size: 16px;
+        font-weight: 600;
     }
 }
