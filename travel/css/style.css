@@ -8,9 +8,12 @@ body {
     background: linear-gradient(to bottom right, #f5f6f7, #f5f6f7);
 }
 
-/* main {
-    flex-grow: 1;
-} */
+.form {
+    display: inline-block;
+    padding: 15px 20px 15px 20px;
+    background-color: #455a64;
+    width: 100%;
+}
 
 .container {
     margin: 0 auto;
@@ -25,17 +28,6 @@ body {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.layout h1 {
-    margin: 0;
-    display: block;
-    font-family: 'Google Sans', 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: left;
-    color: #000;
 }
 
 .layout .time {
@@ -102,12 +94,11 @@ body {
 .card h1 {
     margin: 0;
     display: block;
-    font-family: 'Google Sans', 'Roboto', sans-serif;
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
     font-size: 32px;
     line-height: 36px;
     text-align: left;
-    color: #000;
+    color: #fff;
 }
 
 .card h2 {
