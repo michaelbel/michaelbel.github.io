@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
-
 ::selection {
     background: rgba(0, 0, 0, 0.99);
     color: #fff;
@@ -126,7 +124,7 @@ body {
 
 /******************************************************************************/
 
-figcaption {
+/* figcaption {
     width: 100%;
     text-align: center;
     font-size: 15px;
@@ -166,7 +164,7 @@ section figure figcaption {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, .6); /*alpha 50%*/
+    background: rgba(0, 0, 0, .6); /*alpha 50%
     color: #fff;
     padding-left: 8px;
     padding-right: 8px;
@@ -178,7 +176,7 @@ section figure figcaption {
 section {
     height: 1%;
     overflow: hidden;
-}
+} */
 
 $grid-columns: 12 !default;
 $grid-gutter-width: 30px !default;
@@ -232,12 +230,12 @@ $grid-gutter-width: 30px !default;
 
 /******************************************************************************/
 
-ul {
+.layout ul {
     list-style-type: none;
     line-height: 2.0;
 }
 
-li a {
+.layout li a {
     text-decoration: none;
     color: #0076ff;
     border-bottom: 1px solid rgba(0, 118, 255, .2);
@@ -245,20 +243,20 @@ li a {
     transition-duration: .15s;
     transition-timing-function: ease-out;
     font-size: 18px;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 
-li a:hover {
+.layout li a:hover {
     color: #ff3824;
     border-bottom-color: rgba(255, 56, 36, .2)
 }
 
-li a:visited {
+.layout li a:visited {
     color: #b40eb4;
     border-bottom-color: rgba(180, 14, 180, .2)
 }
 
-li span {
+.layout li span {
     display: inline-block;
 	width: 40px;
     margin-right: 20px;
