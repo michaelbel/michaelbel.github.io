@@ -21,13 +21,6 @@ footer .nav:hover {
     color: #fff;
 }
 
-footer .nav:visited {
-    line-height: 36px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #cfd8dc;
-}
-
 footer .links {
     text-align: center;
     font-family: 'Roboto', sans-serif;
