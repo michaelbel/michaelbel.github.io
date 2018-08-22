@@ -94,7 +94,7 @@ body {
 }
 
 .time {
-    float: left;
+    /* float: left; */
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -103,7 +103,7 @@ body {
     color: #818181;
 }
 
-.coordinates {
+/* .coordinates {
     float: right;
     margin: 0;
     padding: 0;
@@ -112,7 +112,7 @@ body {
     font-size: 14px;
     line-height: 38px;
     color: #818181;
-}
+} */
 
 .text {
     margin: 0;
