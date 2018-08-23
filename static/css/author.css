@@ -76,6 +76,7 @@ li {
     }
 }
 
+/*---Мобильная версия---*/
 @media (min-width: 320px) and (max-width: 480px) {
     .activity {
         width: 100%;
@@ -110,6 +111,7 @@ li {
 
     li {
         padding-left: 20px;
+        padding-right: 20px;
         color: #212121;
         font-size: 16px;
         font-family: 'Roboto', sans-serif;
