@@ -84,7 +84,7 @@ body {
     padding-left: 20px;
     padding-top: 5px;
     padding-right: 20px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 
 .ya-share2 {
@@ -92,12 +92,6 @@ body {
     padding-top: 5px;
     padding-right: 20px;
     padding-bottom: 5px;
-}
-
-.block {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
 }
 
 .time {
@@ -167,6 +161,13 @@ body {
         text-align: left;
         color: #fff;
     }
+
+    .layout {
+        padding-left: 0;
+        padding-top: 5px;
+        padding-right: 0;
+        padding-bottom: 5px;
+    }
 }
 
 /******************************************************************************/
@@ -196,7 +197,7 @@ figcaption {
     font-family: 'Roboto', sans-serif;
 }
 
- .layout li a:hover {
+.layout li a:hover {
     color: #0076ff;
     border-bottom: 1px solid rgba(0, 118, 255, .2);
 }
