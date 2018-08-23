@@ -51,6 +51,13 @@ body {
 
 .name {
     float: left;
+    margin: 0;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: left;
+    color: #fff;
 }
 
 .mapb {
@@ -94,7 +101,6 @@ body {
 }
 
 .time {
-    /* float: left; */
     margin: 0;
     padding: 0;
     padding-left: 20px;
@@ -105,17 +111,6 @@ body {
     line-height: 28px;
     color: #818181;
 }
-
-/* .coordinates {
-    float: right;
-    margin: 0;
-    padding: 0;
-    margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 38px;
-    color: #818181;
-} */
 
 .text {
     margin: 0;
@@ -134,16 +129,6 @@ body {
     margin-bottom: 20px;
 }
 
-.cardview h1 {
-    margin: 0;
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: left;
-    color: #fff;
-}
-
 .cardview h2 {
     margin: 0;
     display: block;
@@ -151,6 +136,37 @@ body {
     font-size: 24px;
     text-align: left;
     color: #000;
+}
+
+/*---Мобильная версия---*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .activity {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .cardview {
+        position: relative;
+        margin: 0;
+        background-color: #fff;
+        -webkit-transition: -webkit-box-shadow .0s;
+        transition: -webkit-box-shadow .0s;
+        transition: box-shadow .0s;
+        transition: box-shadow .0s, -webkit-box-shadow .0s;
+        border-radius: 0;
+        box-shadow: 0;
+    }
+
+    .name {
+        float: left;
+        margin: 0;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: left;
+        color: #fff;
+    }
 }
 
 /******************************************************************************/
@@ -161,99 +177,6 @@ figcaption {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     color: #454545;
-}
-
-/* span {
-    display: block;
-    margin: 0;
-    padding: 0;
-    color: #141414;
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Google Sans', 'Roboto', sans-serif;
-    font-weight: normal;
-    line-height: 28px;
-} */
-
-/* section figure {
-    position: relative;
-    margin: 0 auto;
-    font-size: 15px;
-    text-align: center;
-    float: left;
-    max-width: 100%;
-}
-
-section figure img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: top;
-} */
-
-/* section figure figcaption {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .6);
-    color: #fff;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    font-size: 14px;
-} */
-
-/* section {
-    height: 1%;
-    overflow: hidden;
-} */
-
-@media only screen and (max-width: 515px) {
-    .navigation {
-        float: left;
-        font-size: 14px;
-        margin-right: 15px;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .content {
-        padding-left: 5px;
-        padding-top: 5px;
-        padding-right: 5px;
-        padding-bottom: 5px;
-        width: auto;
-    }
-
-    .image {
-        width: 100%;
-        height: auto;
-        border: 1;
-    }
-
-    .layout {
-        padding-left: 0px;
-        padding-top: 20px;
-        padding-right: 0px;
-        padding-bottom: 20px;
-    }
-
-    figcaption {
-        width: 100%;
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .layout.description, h2 {
-        padding-left: 20px;
-        padding-top: 0px;
-        padding-right: 20px;
-        padding-bottom: 0px;
-    }
 }
 
 /******************************************************************************/
@@ -277,11 +200,6 @@ section figure img {
     color: #0076ff;
     border-bottom: 1px solid rgba(0, 118, 255, .2);
 }
-
-/* .layout li a:visited {
-    color: #b40eb4;
-    border-bottom-color: rgba(180, 14, 180, .2)
-} */
 
 .layout li span {
     display: inline-block;
