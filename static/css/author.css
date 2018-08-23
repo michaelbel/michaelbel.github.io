@@ -76,7 +76,7 @@ li {
     }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .activity {
         width: 100%;
     }
