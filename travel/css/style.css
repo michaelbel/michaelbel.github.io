@@ -123,13 +123,15 @@ body {
     margin-bottom: 20px;
 }
 
-.cardview h2 {
+.name-min {
+    float: left;
     margin: 0;
     display: block;
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
+    line-height: 28px;
     text-align: left;
-    color: #000;
+    color: #212121;
 }
 
 /*---Мобильная версия---*/
