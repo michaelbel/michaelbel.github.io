@@ -9,7 +9,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: linear-gradient(to bottom right, #f5f6f7, #f5f6f7);
+    background-color: #f5f6f7;
+    /* background: linear-gradient(to bottom right, #f5f6f7, #f5f6f7); */
 }
 
 .activity {
@@ -191,6 +192,15 @@ figcaption a:hover {
 .layout ul {
     list-style-type: none;
     line-height: 1.75;
+}
+
+.layout li {
+    text-decoration: none;
+    transition-property: border-bottom, border-color, color, fill;
+    transition-duration: .15s;
+    transition-timing-function: ease-out;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .layout li a {
