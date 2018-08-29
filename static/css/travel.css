@@ -32,6 +32,15 @@ ul {
     line-height: 1.75;
 }
 
+li {
+    text-decoration: none;
+    transition-property: border-bottom, border-color, color, fill;
+    transition-duration: .15s;
+    transition-timing-function: ease-out;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
 li a {
     text-decoration: none;
     color: #0076ff;
@@ -51,9 +60,9 @@ li span {
     display: inline-block;
 	width: 35px;
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
     color: #000;
     text-align: center;
-    font-family: 'gilroy', Arial, Helvetica, sans-serif;
+    font-family: 'gilroy', sans-serif;
 }
