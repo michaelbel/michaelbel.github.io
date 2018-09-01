@@ -130,6 +130,25 @@ body {
     color: #212121;
 }
 
+/*---Подписи к фотографиям---*/
+figcaption {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+figcaption a {
+    color: #2f6ea5;
+}
+
+figcaption a:hover {
+    border-bottom: 1px solid rgba(47, 110, 165, .2);
+}
+
 /*---Мобильная версия---*/
 @media (min-width: 320px) and (max-width: 480px) {
     .activity {
@@ -166,33 +185,21 @@ body {
         padding-right: 0;
         padding-bottom: 5px;
     }
+
+    figcaption {
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        color: #000;
+        margin-left: 18px;
+        margin-top: 14px;
+        margin-right: 18px;
+        margin-bottom: 14px;
+    }
 }
 
 /******************************************************************************/
-
-figcaption {
-    width: 100%;
-    text-align: left;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    color: #000;
-    margin-top: 14px;
-    margin-bottom: 14px;
-}
-
-figcaption a {
-    width: 100%;
-    text-align: left;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    color: #2f6ea5;
-    margin-top: 14px;
-    margin-bottom: 14px;
-}
-
-figcaption a:hover {
-    border-bottom: 1px solid rgba(47, 110, 165, .2);
-}
 
 /******************************************************************************/
 
