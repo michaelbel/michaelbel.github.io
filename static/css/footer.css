@@ -1,3 +1,9 @@
+::selection {
+    background: rgba(0, 0, 0, 0.99);
+    color: #fff;
+    opacity: 1;
+}
+
 footer {
     flex-shrink: 0;
     padding-top: 20px;
@@ -11,7 +17,7 @@ footer hr {
 }
 
 footer .nav {
-    line-height: 36px;
+    line-height: 34px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #cfd8dc;
@@ -30,4 +36,41 @@ footer .links {
 footer .links a {
     color: #fff;
     font-family: 'Roboto', sans-serif;
+}
+
+footer .links .a-home:hover {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.activity {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    flex-grow: 1;
+}
+
+@media only screen and (min-width: 601px) {
+    .activity {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .activity {
+        width: 70%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .activity {
+        width: 100%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 319px) {
+    .activity {
+        width: 100%;
+    }
 }
