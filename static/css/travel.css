@@ -85,12 +85,12 @@ footer {
     }
 }
 
-ul {
+.layout ul {
     list-style-type: none;
     line-height: 1.75;
 }
 
-li {
+.layout li {
     text-decoration: none;
     transition-property: border-bottom, border-color, color, fill;
     transition-duration: .15s;
@@ -99,7 +99,7 @@ li {
     font-family: 'Roboto', sans-serif;
 }
 
-li a {
+.layout li a {
     text-decoration: none;
     color: #0076ff;
     transition-property: border-bottom, border-color, color, fill;
@@ -109,12 +109,12 @@ li a {
     font-family: 'Roboto', sans-serif;
 }
 
-li a:hover {
+.layout li a:hover {
     color: #0076ff;
     border-bottom: 1px solid rgba(0, 118, 255, .2);
 }
 
-li span {
+.layout li span {
     display: inline-block;
 	width: 35px;
     margin-right: 15px;
