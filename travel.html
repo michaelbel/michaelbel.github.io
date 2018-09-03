@@ -12,29 +12,28 @@
 	<link type="text/css" rel="stylesheet" href="static/css/footer.css" media="screen, projection">
     <link type="text/css" rel="stylesheet" href="static/materialize/materialize.css" media="screen, projection">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
 </head>
 
 <body>
-	<div class="activity">
-        <div>
-			<div class="layout">
-				<h1 class="pora">Пора куда-нибудь валить.</h1>
+	<header>
+		<div class="activity">
+			<h1>Поездки</h1>
+			<div id="btn">На карте</div>
+		</div>
+	</header>
 
-				<ul>
-					<li><span>Л</span><a href="http://michaelbel.org/travel/lyubertsy">Люберцы</a></li>
-					<li><span>М</span><a href="http://michaelbel.org/travel/mozhaysk">Можайск</a></li>
-					<li><span>&nbsp;</span><a href="http://michaelbel.org/travel/moscow">Москва</a></li>
-					<li><span>С</span><a href="http://michaelbel.org/travel/solnechnogorsk">Солнечногорск</a></li>
-					<li><span>Р</span><a href="http://michaelbel.org/travel/reutov">Реутов</a></li>
-		        </ul>
+	<div class="activity m">
+		<iframe id="boxl" src="https://www.tripline.net/map?tripId=1454550155641014A355CB10A88D2EEE&onSite=0"></iframe>
+		<p class="text">Считаются только те города, откуда есть фотографии.</p>
 
-				<div style="position: relative;margin: 5px 0 5px 0;padding-bottom: 56.25%;height: 0;clear: both;">
-					<iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;" src="https://www.tripline.net/map?tripId=1454550155641014A355CB10A88D2EEE&onSite=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
-					</iframe>
-				</div>
-			</div>
-        </div>
-        </div>
+		<ul class="cities">
+			<li><span>Л</span><a href="http://michaelbel.org/travel/lyubertsy">Люберцы</a></li>
+			<li><span>М</span><a href="http://michaelbel.org/travel/mozhaysk">Можайск</a></li>
+			<li><span>&nbsp;</span><a href="http://michaelbel.org/travel/moscow">Москва</a></li>
+			<li><span>С</span><a href="http://michaelbel.org/travel/solnechnogorsk">Солнечногорск</a></li>
+			<li><span>Р</span><a href="http://michaelbel.org/travel/reutov">Реутов</a></li>
+		</ul>
     </div>
 
 	<footer>
@@ -102,11 +101,15 @@
                     </a>
                 </div>
                 © 2018 - <a class="a-home" href="http://michaelbel.org">Михаил Белый</a>
-				<br>
-				Сделано с &#x2764;
             </div>
          </div>
     </footer>
 </body>
+
+<script>
+    $("#btn").click(function() {
+        $("#boxl").slideToggle("medium");
+    });
+</script>
 
 </html>
