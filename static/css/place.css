@@ -144,12 +144,12 @@ figcaption a:hover {
     }
 }
 
-.layout ul {
+ul.city {
     list-style-type: none;
-    line-height: 1.75;
+    line-height: 1.60;
 }
 
-.layout li {
+ul.city li {
     text-decoration: none;
     transition-property: border-bottom, border-color, color, fill;
     transition-duration: .15s;
@@ -158,7 +158,7 @@ figcaption a:hover {
     font-family: 'Roboto', sans-serif;
 }
 
-.layout li a {
+ul.city li a {
     text-decoration: none;
     color: #0076ff;
     transition-property: border-bottom, border-color, color, fill;
@@ -168,12 +168,12 @@ figcaption a:hover {
     font-family: 'Roboto', sans-serif;
 }
 
-.layout li a:hover {
+ul.city li a:hover {
     color: #0076ff;
     border-bottom: 1px solid rgba(0, 118, 255, .2);
 }
 
-.layout li span {
+ul.city li span {
     display: inline-block;
 	width: 35px;
     margin-right: 15px;
