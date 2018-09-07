@@ -330,16 +330,16 @@ pre .highlighted, pre code .highlighted, pre kbd .highlighted, pre samp .highlig
     padding: 0;
 }
 .text-large {
-    font-size: 22px;
-    font-size: 1.375rem;
-    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 @media only screen and (min-width: 600px) {
     .text-large {
-    font-size: 26px;
-    font-size: 1.625rem;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+    }
 }
-}@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
     .text-large {
     font-size: 30px;
     font-size: 1.875rem;
@@ -2054,7 +2054,7 @@ a:hover, a:focus, .link:hover, .link:focus {
     margin: 0 auto;
     max-width: 1440px;
     min-width: 320px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 @media only screen and (min-width: 600px) {
     .o-container {
@@ -2365,7 +2365,7 @@ html[dir='rtl'] .o-container--left {
     border-right: 4px solid transparent;
     display: block;
     float: left;
-    min-height: 250px;
+    min-height: 180px;
     overflow: hidden;
     position: relative;
     text-decoration: none;
@@ -2373,10 +2373,10 @@ html[dir='rtl'] .o-container--left {
     width: 100%}
 @media only screen and (min-width: 600px) and (max-width: 999px) {
     .c-blocks__item {
-    width: 33.3%}
+    width: 25%}
 }@media only screen and (min-width: 1000px) {
     .c-blocks__item {
-    width: 33.3% } /* Было 25% */
+    width: 25% } /* Было 25% */
 }.c-blocks__item::after {
     bottom: 0;
     content: '';
@@ -2405,7 +2405,7 @@ html[dir='rtl'] .o-container--left {
 }
 @media only screen and (min-width: 600px) and (max-width: 999px) {
     .c-blocks__item--double {
-    width: 66.6%}
+    width: 50%}
 }@media only screen and (min-width: 1000px) {
     .c-blocks__item--double {
     width: 50%}
@@ -2446,7 +2446,7 @@ html[dir='rtl'] .o-container--left {
 .c-blocks__item-title {
     font-size: 20px;
     line-height: 1.2;
-    margin-bottom: 7px;
+    /* margin-bottom: 7px; */
 }
 .c-blocks__item-category {
     font-size: 16px;
