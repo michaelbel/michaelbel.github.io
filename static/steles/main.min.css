@@ -2059,7 +2059,7 @@ a:hover, a:focus, .link:hover, .link:focus {
 @media only screen and (min-width: 600px) {
     .o-container {
     box-sizing: initial;
-    padding: 0 40px;
+    padding: 0 40px 0 40px;
 }
 }.o-container--half {
     max-width: 720px;
@@ -2359,10 +2359,11 @@ html[dir='rtl'] .o-container--left {
     display: block;
 }
 .c-blocks__item {
-    /* background: #647b86; */
-    /* background-clip: content-box; */
+    /* background: #647b86;
+    background-clip: content-box; */
     border-bottom: 4px solid transparent;
     border-right: 4px solid transparent;
+    background: transparent;
     display: block;
     float: left;
     min-height: 180px;
@@ -2391,7 +2392,7 @@ html[dir='rtl'] .o-container--left {
     text-decoration: none;
 }
 .c-blocks__item:hover::after, .c-blocks__item:focus::after {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
 }
 .c-blocks__item:hover .c-blocks__item-image, .c-blocks__item:focus .c-blocks__item-image {
     -webkit-transform: scale(1.05);
@@ -2399,9 +2400,9 @@ html[dir='rtl'] .o-container--left {
     transform: scale(1.05);
 }
 .c-blocks__item:hover .c-blocks__item-title, .c-blocks__item:hover .c-blocks__item-category, .c-blocks__item:focus .c-blocks__item-title, .c-blocks__item:focus .c-blocks__item-category {
-    -webkit-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    transform: translateY(-15px);
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 @media only screen and (min-width: 600px) and (max-width: 999px) {
     .c-blocks__item--double {
@@ -2412,23 +2413,23 @@ html[dir='rtl'] .o-container--left {
 }.c-blocks__item-inner {
     bottom: 0;
     left: 0;
-    padding: 20px;
+    padding: 15px;
     position: absolute;
     right: 0;
     top: 0;
     width: 100%}
 .c-blocks__item-body {
-    bottom: 20px;
-    left: 20px;
+    bottom: 15px;
+    left: 15px;
     position: absolute;
-    right: 20px;
+    right: 15px;
 }
 .c-blocks__item-tag, .c-blocks__item-title, .c-blocks__item-category {
     color: #fff;
     display: block;
     font-size: 14px;
     position: relative;
-    text-shadow: 1px 1px #333;
+    /* text-shadow: 1px 1px #333; */
     text-align: left;
     -webkit-transition: -webkit-transform .25s;
     transition: -webkit-transform .25s;
@@ -2457,10 +2458,10 @@ html[dir='rtl'] .o-container--left {
     min-width: 100%;
     position: absolute;
     top: 0;
-    -webkit-transition: -webkit-transform .25s;
-    transition: -webkit-transform .25s;
-    transition: transform .25s;
-    transition: transform .25s,  -webkit-transform .25s;
+    -webkit-transition: -webkit-transform .20s;
+    transition: -webkit-transform .20s;
+    transition: transform .20s;
+    transition: transform .20s,  -webkit-transform .20s;
 }
 .c-card {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
