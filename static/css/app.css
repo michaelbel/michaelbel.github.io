@@ -160,7 +160,7 @@ header ul a:hover span {
     transition-property: border-bottom, border-color, background, color, fill;
     font-size: 20px;
     font-family: Georgia, serif;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .content li a {
