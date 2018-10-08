@@ -33,11 +33,6 @@ ul, ol {
     padding: 0;
 }
 
-code {
-    color: #444;
-    background-color: #f6f6f6;
-}
-
 blockquote {
     font-size: 14px;
 }
@@ -55,6 +50,15 @@ header h1 {
     text-transform: uppercase;
 }
 
+header h1 a {
+    color: #fff;
+}
+
+header h1 a:hover {
+    color: #ff5252;
+    text-decoration: none;
+}
+
 @media (max-width: 767px) {
     header h1 {
         font-size: 40px;
@@ -66,15 +70,6 @@ header h1 {
     }
 }
 
-header h1 a {
-    color: #fff;
-}
-
-header h1 a:hover {
-    color: #ff5252;
-    text-decoration: none;
-}
-
 .content {
     padding-left: 40px;
     padding-top: 30px;
@@ -84,34 +79,16 @@ header h1 a:hover {
     line-height: 20px;
 }
 
-/*.content h2 {
-    color: #000;
-    margin-top: 0;
-    font-size: 32px;
-    font-weight: 800;
-    font-family: Helvetica, sans-serif;
-}*/
-
 .content h2.title {
     color: #000;
     margin: 0;
     font-size: 2.2rem;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: 900;
 }
 
-/*.content h3 {
-    margin-top: 25px;
-    margin-bottom: 15px;
-}*/
-
-/*.content h4 {
-    margin-top: 25px;
-    margin-bottom: 15px;
-}*/
-
 .content p {
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     margin-bottom: 15px;
     font-size: 20px;
     line-height: 1.4;
@@ -121,6 +98,7 @@ header h1 a:hover {
 }
 
 .content p.date {
+    margin-top: 15px;
     color: #999;
 }
 
@@ -133,9 +111,20 @@ header h1 a:hover {
     transition-duration: .15s;
     transition-timing-function: ease-out;
     transition-property: border-bottom, border-color, background, color, fill;
-    font-size: 20px;
-    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-family: 'lora', Georgia, serif;
     margin-bottom: 12px;
+}
+
+.content li span {
+    display: inline-block;
+    width: 30px;
+    margin-right: 45px;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+    font-family: 'gilroy', Arial, Helvetica, sans-serif;
 }
 
 .content li a {
@@ -159,32 +148,28 @@ header h1 a:hover {
     border-radius: 4px;
 }
 
-.post-item {
-    margin-bottom: 20px;
+.post {
+    margin-bottom: 10px;
 }
 
-.post-item:last-child {
-    margin-bottom: 0;
-}
-
-.post-item a {
+.post a {
     display: block;
 }
 
-.post-item a:hover {
+.post a:hover {
     text-decoration: none;
 }
 
-.post-item a h2 {
+.post a h2 {
     color: #222;
 }
 
-.post-item a p {
+.post a p {
     color: #888;
 }
 
 .post h2 {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 img.float-right {
@@ -199,3 +184,5 @@ img.float-right {
         margin: 1em auto;
     }
 }
+
+/*---BottomSheet---*/
