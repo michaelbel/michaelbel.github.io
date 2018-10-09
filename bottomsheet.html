@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="theme-color" content="#131313">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BottomSheet</title>
+
+    <link rel="icon" sizes="192x192" href="./posts/bottomsheet/icon.png">
+    <link type="text/css" rel="stylesheet" href="./static/css/app.css" media="screen, projection">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
+
+    <!--Rainbow-->
+    <script src="./static/js/rainbow-custom.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./static/css/github_theme.css" media="screen, projection">
+</head>
+
+<body>
+	<header>
+       	<h1><a href="http://michaelbel.org/">Michael Bely</a></h1>
+    </header>
+
+	<div class="content post">
+        <h2 class="title">BottomSheet</h2>
+        <p class="date">21 Сентября 2016</p>
+        
+        <p>Библиотека для создания модальных диалоговых окон в приложениях Android.</p>
+        <div class="block">
+			<img src="./posts/bottomsheet/dialog_light.png" width="320px">
+			<img src="./posts/bottomsheet/dialog_night.png" width="320px" style="margin-left: 15px;">
+		</div>
+
+		<p>Подключить библиотеку можно добавив зависимость в build.gradle:</p>
+		<!--<pre><code data-language="css">dependencies {&#10; &emsp;&emsp;implementation 'org.michaelbel:bottomsheet:1.2.3'&#10;}</code></pre>-->
+		<pre><code data-language="css">dependencies {
+    implementation 'org.michaelbel:bottomsheet:1.2.3'
+}</code></pre>
+		
+		<p>Список всех доступных методов:</p>
+		<pre><code data-language="java">BottomSheet.Builder builder = new BottomSheet.Builder(context);
+builder
+   .setTitle(CharSequence title)
+   .setItems(CharSequence[] items, Drawable[] icons, DialogInterface.OnClickListener listener)
+   .setMenu(@MenuRes int menuResId, DialogInterface.OnClickListener listener)
+   .setView(@LayoutRes int layoutResId)
+   .setContentType(@BottomSheet.Type int type)
+   .setDarkTheme(boolean darkTheme)
+   .setFullWidth(boolean fullWidth)
+   .setCellHeight(int cellHeightDp)
+   .setDividers(boolean dividers)
+   .setWindowDimming(@Range(from = 0, to = 255) int windowDimming)
+   .setTitleMultiline(boolean multiline)
+   .setFabBehavior(FloatingActionButton button)
+   .setFabBehavior(FloatingActionButton button, @BottomSheet.FabBehavior int fabBehavior)
+   .setBackgroundColor(@ColorInt int color)
+   .setBackgroundColorRes(@ColorRes int color)
+   .setTitleTextColor(@ColorInt int color)
+   .setTitleTextColorRes(@ColorRes int color)
+   .setItemTextColor(@ColorInt int color)
+   .setItemTextColorRes(@ColorRes int color)
+   .setIconColor(@ColorInt int color)
+   .setIconColorRes(@ColorRes int color)
+   .setItemSelector(int selector);
+   .setOnShowListener(new DialogInterface.OnShowListener() {
+       @Override
+       public void onShow(DialogInterface dialog) {
+       }
+   });
+   .setOnDismissListener(new DialogInterface.OnDismissListener() {
+       @Override
+       public void onDismiss(DialogInterface dialog) {
+       }
+   });
+   .setCallback(new BottomSheetCallback() {
+       @Override
+       public void onShown() {
+       }
+       
+       @Override
+       public void onDismissed() {
+       }
+   })
+   .show();</code></pre>
+
+    <p>Библиотека BottomSheet это приложение, написанное на языке Java. Оно включает в себя несколько классов и комплект android-ресурсов.</p>
+
+    <p>Импортировать необходимые зависимости и создать экземпляр диалога:</p>
+    <pre><code data-language="java">import org.michaelbel.bottomsheet.BottomSheet;
+import org.michaelbel.bottomsheet.BottomSheetCallback;
+import org.michaelbel.bottomsheet.Utils;
+
+BottomSheet.Builder builder = new BottomSheet.Builder(context);</code></pre>
+
+	<p>Задать название можно передав экземпляр строки напрямую:</p>
+	<pre><code data-language="java">builder.setTitle("My title");</code></pre>
+
+	<p>или указав адрес строкового ресурса:</p>
+	<pre><code data-language="java">builder.setTitle(R.string.title_text);</code></pre>
+
+	<p>Объекты создаются с помощью массивов. Поддерживается следующие типы данных: String, CharSequence, Int (адреса строковых ресурсов).</p>
+    <pre><code data-language="java">String[] items = new String[] {
+    "Share",
+    "Upload",
+    "Copy",
+    "Print this page"
+};
+
+CharSequence[] items = new CharSequence[] {
+    "Share",
+    "Upload",
+    "Copy",
+    "Print this page"
+};
+
+int[] items = new int[] {
+    R.string.share,
+    R.string.upload,
+    R.string.copy,
+    R.string.print_this_page
+};</code></pre>
+
+	<p>Еще можно создать строковый массив и затем вызвать его в коде класса</p>
+    <pre><code data-language="xml">&lt;string-array name="items"&gt;
+    &lt;item&lt;&gt;Share&lt;/item&gt;
+    &lt;item&gt;Upload&lt;/item&gt;
+    &lt;item&gt;Copy&lt;/item&gt;
+    &lt;item&gt;Print&lt;/item&gt;
+</string-array></code>
+
+<code data-language="java">String[] items = R.array.items;</code></pre>
+
+	<p>Иконки можно создать так:</p>
+    <pre><code data-language="java">int[] icons = new int[] {
+    R.drawable.ic_share,
+    R.drawable.ic_upload,
+    R.drawable.ic_copy,
+    R.drawable.ic_print
+};</code></pre>
+
+    <p>И так:</p>
+    <pre><code data-language="java">Drawable[] icons = new Drawable[] {
+    ContextCompat.getDrawable(context, R.drawable.ic_share),
+    ContextCompat.getDrawable(context, R.drawable.ic_upload),
+    ContextCompat.getDrawable(context, R.drawable.ic_copy),
+    ContextCompat.getDrawable(context, R.drawable.ic_print)
+};</code></pre>
+
+	<p>Готовый метод будет выглядеть так:</p>
+    <pre><code data-language="java">builder.setItems(items, icons, new DialogInterface.OnClickListener() {
+    @Override
+    public void onClick(DialogInterface dialog, int which) {
+        // your code here.
+    }
+});</code></pre>
+
+    <p>Из меню создать для начала меню лайаут файл</p>
+    <pre><code data-language="xml"><menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/share"
+          android:icon="@drawable/ic_share"/>
+
+    <item android:title="@string/upload"
+          android:icon="@drawable/ic_upload"/>
+
+    <item android:title="@string/copy"
+          android:icon="@drawable/ic_copy"/>
+
+    <item android:title="@string/print_this_page"
+          android:icon="@drawable/ic_print"/>
+</menu></code></pre>
+
+	<p>Метод будет выглядеть так:</p>
+    <pre><code data-language="java">builder.setMenu(R.menu.menu_items, new DialogInterface.OnClickListener() {
+    @Override
+    public void onClick(DialogInterface dialog, int which) {
+        // your code here.
+    }
+});</code></pre>
+
+    <p>Изменить тип</p>
+    <pre><code data-language="java">builder.setContentType(BottomSheet.LIST);
+builder.setContentType(BottomSheet.GRID);</code></pre>
+
+    <p>Изменить цвет названия</p>
+    <pre><code data-language="java">builder.setTitleTextColor(Color.RED);
+builder.setTitleTextColor(0xFFFF5252);
+builder.setTitleTextColor(getResources().getColor(R.color.my_color));
+builder.setTitleTextColor(ContextCompat.getColor(context, R.color.my_color));
+builder.setTitleTextColorRes(R.color.my_color);</code></pre>
+
+    <p>Изменить цвет айтемов</p>
+    <pre><code data-language="java">builder.setItemTextColor(Color.RED);
+builder.setItemTextColor(0xFFFF5252);
+builder.setItemTextColor(getResources().getColor(R.color.my_color));
+builder.setItemTextColor(ContextCompat.getColor(context, R.color.my_color));
+builder.setItemTextColorRes(R.color.my_color);</code></pre>
+
+    <p>Изменить бэкграунт</p>
+    <pre><code data-language="java">builder.setBackgroundColor(Color.RED);
+builder.setBackgroundColor(0xFFFF5252);
+builder.setBackgroundColor(getResources().getColor(R.color.my_color));
+builder.setBackgroundColor(ContextCompat.getColor(context, R.color.my_color));
+builder.setBackgroundColorRes(R.color.my_color);</code></pre>
+
+    <p>Изменить цвет иконок</p>
+    <pre><code data-language="java">builder.setIconColor(Color.RED);
+builder.setIconColor(0xFFFF5252);
+builder.setIconColor(getResources().getColor(R.color.my_color));
+builder.setIconColor(ContextCompat.getColor(context, R.color.my_color));
+builder.setIconColorRes(R.color.my_color);</code></pre>
+
+    <p>На всю ширину</p>
+    <pre><code data-language="java">builder.setFullWidth(true);
+builder.setFullWidth(R.bool.full_width);</code></pre>
+
+    <p>Изменить высоту ячеек</p>
+    <pre><code data-language="java">builder.setCellHeight(Utils.dp(this, 52);</code></pre>
+
+    <p>Задать дивайдеры</p>
+    <pre><code data-language="java">builder.setDividers(true);
+builder.setDividers(R.bool.dividers);</code></pre>
+
+    <p>Сделать название многострочным</p>
+    <pre><code data-language="java">builder.setTitleMultiline(true);
+builder.setTitleMultiline(R.bool.multiline);</code></pre>
+
+    <p>Задать темную тему</p>
+    <pre><code data-language="java">builder.setDarkTheme(true);
+builder.setDarkTheme(R.bool.multiline);</code></pre>
+
+    <p>Затемнение экрана</p>
+    <pre><code data-language="java">builder.setWindowDimming(100);</code></pre>
+
+    <p>Поведение кнопки фаб</p>
+    <pre><code data-language="java">builder.setFabBehavior(floatingActionButton, BottomSheet.FAB_SHOW_HIDE);</code></pre>
+
+    <p>опен клозе листенер</p>
+    <pre><code data-language="java">builder.setOnShowListener(new DialogInterface.OnShowListener() {
+    @Override
+    public void onShow(DialogInterface dialog) {
+        // your code here.
+    }
+});
+
+builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+    @Override
+    public void onDismiss(DialogInterface dialog) {
+        // your code here.
+    }
+});</code></pre>
+
+    <p>коллбэк</p>
+    <pre><code data-language="java">builder.setCallback(new BottomSheetCallback() {
+    @Override
+    public void onShown() {
+        // your code here.
+    }
+
+    @Override
+    public void onDismissed() {
+        // and here.
+    }
+});</code></pre>
+
+    <p>не забудьте метод шоу чтобы запустить ваш диалог</p>
+    <pre><code data-language="java">builder.show();</code></pre>
+
+    <p></p>
+    <pre><code data-language="java"></code></pre>
+
+	<p>Доступные геттеры:</p>
+    <pre><code data-language="java">TextView textView = builder.getTitleTextView();</code></pre>
+
+    <p>Устарело!</p>
+    <p>Библиотека является устаревшей. Когда-то боттом щит создавался как замена альтернативному гугловскому глюченому диалогу с херовой анимацией. Но теперь нет сил и желания поддерживать это безобразие и к тому же библиотека гугл быстро развивается и уже можно начинать использовать их вариант. Всем спасибо!</p>
+
+
+
+			<!-- <div class="block2">
+				<a href='https://play.google.com/store/apps/details?id=org.michaelbel.bottomsheetdialog'>
+					<img alt='Доступно в Google Play' src='./static/images/gp_badge.png' height="75px"/>
+				</a>
+
+				<a href='https://github.com/michaelbel/bottomsheet'>
+					<img alt='Доступно на GitHub' src='./static/images/gh_badge.png' height="75px"/>
+				</a>
+			</div> -->
+    	
+    </div>
+</body>
+
+</html>
