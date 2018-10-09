@@ -185,4 +185,23 @@ img.float-right {
     }
 }
 
-/*---BottomSheet---*/
+/*---interests---*/
+h3.title {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.85rem;
+    font-family: Georgia, serif;
+}
+
+ul.interests {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+p.stars {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: Georgia, serif;
+    text-align: center;
+}
