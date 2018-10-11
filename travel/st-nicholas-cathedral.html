@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<!--
+© 2018 Michael Bely
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#131313">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ново-Никольский собор</title>
+
+    <link rel="icon" sizes="192x192" href="../static/icons/travel.png">
+    <link type="text/css" rel="stylesheet" href="../static/css/app.css" media="screen, projection">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../static/css/-slideshow.css" media="screen, projection">
+    <style>
+        .mySlides {
+            display:none
+        }
+        
+        .w3-left, .w3-right, .w3-badge {
+            cursor:pointer
+        }
+        
+        .w3-badge {
+            height:13px;
+            width:13px;
+            padding:0
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="http://michaelbel.org/">Michael Bely</a></h1>
+    </header>
+
+    <div class="content post">
+        <h2 class="title">Ново-Никольский собор</h2>
+        <p class="date">23 Октября 2016</p>
+
+        <div class="w3-display-container">
+            <img class="mySlides" src="photos/st-nicholas-cathedral/1.jpg">
+            <img class="mySlides" src="photos/st-nicholas-cathedral/2.jpg">
+            <img class="mySlides" src="photos/st-nicholas-cathedral/3.jpg">
+        
+            <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+                <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+        </div>
+
+        <p>Русская псевдоготика.</p>
+        <img src="photos/st-nicholas-cathedral/4.jpg">
+        <img src="photos/st-nicholas-cathedral/5.jpg">
+
+        <p>Дома распологаются в незине под собором.</p>
+        <img src="photos/st-nicholas-cathedral/6.jpg">
+        <img src="photos/st-nicholas-cathedral/7.jpg">
+        <img src="photos/st-nicholas-cathedral/8.jpg">
+        <img src="photos/st-nicholas-cathedral/9.jpg" style="border: 1px solid #ccc">
+
+        <p>Испорченный кадр.</p>
+        <img src="photos/st-nicholas-cathedral/10.jpg" style="border: 1px solid #ccc">
+
+        <img src="photos/st-nicholas-cathedral/11.jpg">
+        <img src="photos/st-nicholas-cathedral/12.jpg">
+        <p>¯\_(ツ)_/¯</p>
+        <img src="photos/st-nicholas-cathedral/13.jpg">
+        <img src="photos/st-nicholas-cathedral/14.jpg">
+        <img src="photos/st-nicholas-cathedral/15.jpg" style="border: 1px solid #ccc">
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+        }
+    </script>
+</body>
+
+</html>
