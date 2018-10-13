@@ -37,6 +37,7 @@ blockquote {
     font-size: 14px;
 }
 
+/*---header----------------------------------------*/
 header {
     padding: 30px;
     color: #fff;
@@ -59,6 +60,21 @@ header h1 a:hover {
     text-decoration: none;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    header {
+        padding: 15px;
+        color: #fff;
+        background-color: #131313;
+    }
+
+    header h1 {
+        margin: 0 0 0 4px;
+        font-size: 24px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
 @media (max-width: 767px) {
     header h1 {
         font-size: 40px;
@@ -70,6 +86,7 @@ header h1 a:hover {
     }
 }
 
+/*---post-----*/
 .content {
     padding-left: 40px;
     padding-top: 30px;
@@ -88,7 +105,6 @@ header h1 a:hover {
 }
 
 .content p {
-    /*margin-top: 15px;*/
     margin-bottom: 15px;
     font-size: 20px;
     line-height: 1.4;
@@ -114,6 +130,7 @@ header h1 a:hover {
     font-size: 1.25rem;
     font-family: 'lora', Georgia, serif;
     margin-bottom: 12px;
+    word-wrap: inherit;
 }
 
 .content li span {
@@ -177,6 +194,17 @@ img.float-right {
     float: right;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .content {
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-right: 20px;
+        padding-bottom: 15px;
+        max-width: 100%;
+        line-height: 20px;
+    }
+}
+
 @media (max-width: 500px) {
     img.float-right {
         float: none;
@@ -185,7 +213,7 @@ img.float-right {
     }
 }
 
-/*---interests---*/
+/*---interests----------------------------------------*/
 h3.title {
     color: #000;
     font-weight: 600;
