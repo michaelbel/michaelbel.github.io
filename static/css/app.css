@@ -203,6 +203,14 @@ img.float-right {
         max-width: 100%;
         line-height: 20px;
     }
+
+    .content h2.title {
+        color: #000;
+        margin: 0;
+        font-size: 1.8rem;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        font-weight: 900;
+    }
 }
 
 @media (max-width: 500px) {
